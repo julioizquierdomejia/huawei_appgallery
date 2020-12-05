@@ -27,7 +27,7 @@
 				<div class="col-6 item px-0">
 					<div class="item-content">
 						<img class="img-fluid" src="{{ asset('img/home/chico.png') }}">
-						<div class="item-text text-left pb-md-5 px-md-5">
+						<div class="item-text text-left pb-md-5">
 							<p class="text-above mb-1">Master Class Cocina con</p>
 							<h4 class="item-title mb-4">
 								<strong>José del Castillo</strong>
@@ -39,7 +39,7 @@
 				<div class="col-6 item px-0">
 					<div class="item-content">
 						<img class="img-fluid" src="{{ asset('img/home/chica.png') }}">
-						<div class="item-text text-left pb-md-5 px-md-5">
+						<div class="item-text text-left pb-md-5">
 							<p class="text-above mb-1">Master Class Gym con</p>
 							<h4 class="item-title mb-4">
 								<strong>Solange Barslund - "La Vikinga"</strong>
@@ -64,7 +64,7 @@
 						<div class="item-content">
 							<div class="d-flex align-items-center h-100 p-4">
 								<div class="text px-md-4">
-									<h4 class="step-title text-right mb-3">Paso <span class="step-number">1</span></h4>
+									<h4 class="step-title text-right mb-3 text-uppercase"><strong>Paso <span class="step-number">1</span></strong></h4>
 									<p class="pl-5">Descarga la app de Claro Club desde el AppGallery de HUAWEI</p>
 								</div>
 							</div>
@@ -78,7 +78,7 @@
 						<div class="item-content">
 							<div class="d-flex align-items-center h-100 p-4">
 								<div class="text px-md-4">
-									<h4 class="step-title text-right mb-3">Paso <span class="step-number">2</span></h4>
+									<h4 class="step-title text-right mb-3 text-uppercase"><strong>Paso <span class="step-number">2</span></strong></h4>
 									<p class="pl-5">Descarga la app de Claro Club desde el AppGallery de HUAWEI</p>
 								</div>
 							</div>
@@ -92,7 +92,7 @@
 						<div class="item-content">
 							<div class="d-flex align-items-center h-100 p-4">
 								<div class="text px-md-4">
-									<h4 class="step-title text-right mb-3">Paso <span class="step-number">3</span></h4>
+									<h4 class="step-title text-right mb-3 text-uppercase"><strong>Paso <span class="step-number">3</span></strong></h4>
 									<p class="pl-5">Descarga la app de Claro Club desde el AppGallery de HUAWEI</p>
 								</div>
 							</div>
