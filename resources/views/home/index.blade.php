@@ -7,7 +7,7 @@
 			<div class="row pl-lg-5 h-100">
 				<div class="col-12 pt-3 pt-lg-5 text-uppercase page-title">
 					<h1 class="title pt-md-4">Gana Exclusivas</h1>
-					<p class="text-uppercase">MasterClasses con <br>AppGallery y Claro Club</p>
+					<p class="text-uppercase mt-4">MasterClasses con <br>AppGallery y Claro Club</p>
 				</div>
 				<div class="col-12 bottom mt-auto pb-5">
 					<div class="login-frm pr-2 pr-lg-5 pb-5">
