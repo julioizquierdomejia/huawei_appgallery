@@ -21,7 +21,7 @@
   <body class="page text-white h-100 {{isset($body_class) ? $body_class : ''}}">
     <main class="main h-100">
       @include('layouts.header')
-      <div class="content h-100">
+      <div class="content h-100 pt-4">
         @yield('content')
       </div>
       {{-- <footer class="footer">
