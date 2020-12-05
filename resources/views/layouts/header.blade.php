@@ -4,8 +4,10 @@
     <span class="d-flex align-items-center">
       <img src="{{ asset('img/logo_huawei.png') }}" width="180">
       <span class="px-3 text-muted"> <img src="{{ asset('img/raya.png') }}" width="3" height="50"> </span>
-      <img src="{{ asset('img/logo_claro.png') }}" width="160" style="margin-bottom: 8px">
     </span>
+  </a>
+  <a href="https://appgallery.huawei.com/#/app/C101017573?channelId=marketing&detailType">
+      <img src="{{ asset('img/logo_claro.png') }}" width="160" style="margin-bottom: 8px; margin-left: -16px;">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -21,7 +23,7 @@
       @endif
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#"><img src="{{ asset('img/exploralo-app-gallery.png') }}" width="140"></a>
+        <a class="nav-link" href="https://consumer.huawei.com/pe/mobileservices/appgallery/"><img src="{{ asset('img/exploralo-app-gallery.png') }}" width="140"></a>
       </li>
     </ul>
   </div>
