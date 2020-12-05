@@ -11065,7 +11065,10 @@ h2,
 }
 
 .owl-carousel .owl-dots {
-  margin-top: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
   text-align: center;
 }
 
@@ -11082,9 +11085,9 @@ h2,
   background-color: rgba(10, 10, 10, 0.7);
   content: "";
   position: absolute;
-  left: 15px;
+  left: 0;
   top: 0;
-  right: 15px;
+  right: 0;
   bottom: 0;
   z-index: 2;
 }
