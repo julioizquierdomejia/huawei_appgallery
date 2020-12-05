@@ -19,5 +19,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [App\Http\Controllers\AppController::class, 'home']);
 
-Route::get('/register', [App\Http\Controllers\AppController::class, 'register']);
+Route::get('/register', [App\Http\Controllers\AppController::class, 'register'])->name('registro');
+
+route::resource('codes', App\Http\Controllers\CodeController::class);
+
+Route::get('/vevideo', [App\Http\Controllers\CodeController::class, 'vevideo'])->name('codes.vervideo');
 

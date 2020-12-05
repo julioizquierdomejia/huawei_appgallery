@@ -46,12 +46,28 @@
               <input type="text" id="u-name" name="name" class="form-control user-name" placeholder="Nombres">
             </div>
             <div class="form-group">
-              <label class="sr-only" for="u-email">Nombres</label>
+              <label class="sr-only" for="u-email">Correo</label>
               <input type="text" id="u-email" name="email" class="form-control user-email" placeholder="correo electrónico">
             </div>
             <div class="form-group">
+              <label class="sr-only" for="u-code">Celular</label>
+              <input type="text" id="u-code" name="celular" class="form-control user-code" placeholder="Celular">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="u-code">DNI</label>
+              <input type="text" id="u-code" name="DNI" class="form-control user-code" placeholder="DNI">
+            </div>
+            <div class="form-group">
               <label class="sr-only" for="u-code">Código</label>
-              <input type="text" id="u-code" name="code" class="form-control user-code" placeholder="Código">
+              <div class="row">
+                <div class="col-11">
+                  <input type="text" id="u-code" name="code" class="form-control user-code" placeholder="Código">
+                </div>
+                <div class="col-1">
+                  <a href=""><i class="fas fa-question-circle"></i></a>
+                </div>
+              </div>
+
             </div>
           </div>
           <div class="modal-footer justify-content-between">
