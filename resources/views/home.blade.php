@@ -64,7 +64,7 @@
 		</div>
 	</div>
 </div>
-<div class="cc-huawei cc-huawei-steps pt-5">
+<div class="cc-huawei cc-huawei-steps py-5">
 	<div class="container ow-parent">
 	<div class="row pt-5">
 		<div class="col-12 col-md-5 owl-content px-0">
