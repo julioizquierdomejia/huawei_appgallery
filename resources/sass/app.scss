@@ -61,7 +61,8 @@ h3, h4, h5, h6,
 }
 
 .btn {
-	border-radius: 20px;
+	border-radius: 35px;
+	font-size: 20px;
 	padding: 9px 15px;
 	min-width: 200px;
 	text-transform: uppercase;
@@ -239,6 +240,7 @@ h3, h4, h5, h6,
 		}
 		.text-above {
 			font-size: 27px;
+			line-height: 25px;
 		}
 		&:before {
 			background: linear-gradient(180deg, rgba(255,255,255,0.01) 0%, rgba(0,0,0,0.5) 50%, rgba(30,30,30,0.9) 100%);

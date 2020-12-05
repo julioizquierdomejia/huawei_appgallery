@@ -17,9 +17,9 @@ class AppController extends Controller
         return view('home');
     }
 
-    public function steps()
+    public function register()
     {
-        return view('steps');
+        return view('register');
     }
 
     /**
