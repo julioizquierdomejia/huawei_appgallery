@@ -137,11 +137,12 @@
 	})
 
 	owl.on('changed.owl.carousel', function(event) {
-	    var current = event.relatedTarget.current();
-	    var activeEls = $('.owl-item.active .item');
+		console.log(event)
+	    var current = event.relatedTarget.current() + 1;
+	    var activeEls = $('.owl-item:nth-child('+current+') .item');
 	    //var data = $('.owl-steps').find('.owl-item .item').data('text');
 	    $('.owl-steps-current p').text(activeEls.data('text'));
-	    $('.step-title .step-number').text(current + 1);
+	    $('.step-title .step-number').text(current);
 	  });
 </script>
 @endsection
