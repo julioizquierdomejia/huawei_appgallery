@@ -68,7 +68,7 @@
 	<div class="container ow-parent">
 	<div class="row pt-5">
 		<div class="col-12 col-md-5 owl-content px-0">
-			<div class="owl-carousel owl-steps">
+			<div class="owl-carousel owl-steps pb-5">
 				<div class="item" data-text="Descarga la app de Claro Club desde el AppGallery de HUAWEI">
 					<img class="img-fluid active" src="{{ asset('img/home/chico.png') }}">
 				</div>
