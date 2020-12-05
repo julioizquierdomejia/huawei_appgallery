@@ -25,3 +25,6 @@ Route::get('/register', [App\Http\Controllers\CodeController::class, 'register']
 Route::post('/register', [App\Http\Controllers\CodeController::class, 'store'])->name('user.store');
 Route::get('/vervideo', [App\Http\Controllers\CodeController::class, 'vervideo'])->name('codes.vervideo');
 
+Route::get('/login', [App\Http\Controllers\CodeController::class, 'login'])->name('login');
+Route::post('/login', [App\Http\Controllers\CodeController::class, 'login'])->name('login');
+

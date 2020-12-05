@@ -2,10 +2,6 @@
 @section('content')
 
 <div class="cc-huawei pt-5 container">
-	@php
-		$old = session()->getOldInput();
-		var_dump($old);
-	@endphp
 	<div class="pt-5 pb-3 mt-5">
 		<form class="row" action="/register" method="POST" enctype="multipart/form-data">
 		@csrf

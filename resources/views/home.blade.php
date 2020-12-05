@@ -11,8 +11,11 @@
 				</div>
 				<div class="col-12 bottom mt-auto pb-5">
 					<div class="login-frm pr-2 pr-lg-5 pb-5">
+						@if ($logged)
+						<a class="btn btn-danger" href="/vervideo">Ver vídeos</a>
+						@else
 						<div class="collapse-frm" id="collapseLogin" style="display: none;">
-							<form action="{{ route('codes.vervideo') }}" method="POST" >
+							<form action="{{ route('login') }}" method="POST" >
         					@csrf
 								<div class="form-group f-group-w-icon">
 									<input type="text" name="email" class="form-control" placeholder="correo electrónico" required="">
@@ -29,6 +32,7 @@
 						<a href="{{ route('registro') }}" class="btn btn-danger btn-s-register mt-2">registrar<i class="fa fa-user pl-2"></i></a>
 						<!--button class="btn btn-danger btn-s-register mt-2" type="button" data-toggle="modal" data-target="#modalRegister">Regístrate <i class="fa fa-user pl-2"></i></button-->
 						</div>
+						@endif
 					</div>
 				</div>
 			</div>

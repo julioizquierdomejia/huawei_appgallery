@@ -43,7 +43,7 @@ class CodeController extends Controller
         if($user)
             return redirect('vervideo')->with('user');
         else
-        return redirect('register');
+            return view('register');
     }
 
     public function store(Request $request)
@@ -84,7 +84,7 @@ class CodeController extends Controller
                 $user->email = $email;
                 $user->save();
 
-                \Cookie::queue('email', $user->email, 100);
+                \Cookie::queue('email', $user->email, 1);
 
                 return redirect('vervideo');
             } else {
@@ -101,15 +101,51 @@ class CodeController extends Controller
 
     public function vervideo(Request $request)
     {
-        //
-        $correo = \Cookie::get('email');
-        $user = User::where('email', '=', $correo)->first();
+        $email = \Cookie::get('email');
+        $user = User::where('email', '=', $email)->first();
 
-        if($user)
-            return view('opcion', compact('user'));
-        else
-            return view('register');
-        
+        if($user) {
+            $get_user = \Cookie::get('user');
+            if ($get_user) {
+                $cookie_user = json_decode(\Cookie::get('user'), true);
+            } else {
+                \Cookie::queue('user', json_encode($user), 1);
+                $cookie_user = \Cookie::get('user');
+            }
+            return view('opcion', [
+                'user' => $cookie_user
+            ]);
+        } else {
+            return redirect('/');
+        }
+    }
+
+    public function login(Request $request)
+    {
+        $rules = array(
+            'email' => 'required|email|max:255|exists:users',
+        );
+        $messages = array(
+            'required' => 'El :attribute es requerido.',
+            'email' => 'El :attribute debe ser una dirección de correo válida.',
+        );
+        $validator = \Validator::make($request->all(), $rules, $messages);
+
+        $email = $request->get('email');
+
+        $user = User::where('email', '=', $email)->first();
+
+        if($user) {
+            \Cookie::queue('email', $email, 100);
+            return redirect('vervideo')->with('user');
+        } else {
+            return abort(404);
+        }
+    }
+
+    public function opcion(Request $request)
+    {
+        return view('opcion');
     }
 
 
