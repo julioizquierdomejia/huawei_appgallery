@@ -29,9 +29,9 @@
 						</div>
 						<div class="f-buttons">
 							<p style="font-size: 16px; opacity: 0.7" class="ml-3">¿Ya tienes una cuenta?</p>
-						<button class="btn btn-red-transparent btn-s-login mb-4" type="button">Ingresa Aquí<i class="fa fa-play pl-2"></i></button>
+						<button class="btn btn-red-transparent btn-s-login mb-md-4 my-1" type="button">Ingresa Aquí<i class="fa fa-play pl-2"></i></button>
 						
-						<a href="{{ route('registro') }}" class="btn btn-danger btn-s-register mt-2">Regístrate<i class="fa fa-user pl-2"></i></a>
+						<a href="{{ route('registro') }}" class="btn btn-danger btn-s-register mt-md-2 my-1">Regístrate<i class="fa fa-user pl-2"></i></a>
 						<!--button class="btn btn-danger btn-s-register mt-2" type="button" data-toggle="modal" data-target="#modalRegister">Regístrate <i class="fa fa-user pl-2"></i></button-->
 						</div>
 						@endif
@@ -89,7 +89,7 @@
 			</div>
 		</div>
 		<div class="col-12 col-md-7 px-0">
-			<div class="owl-steps-current item-content">
+			<div class="owl-steps-current item-content h-100">
 				<div class="d-flex align-items-center h-100 p-4">
 					<div class="text col-12 col-md-7 px-md-4">
 						<h4 class="step-title text-right mb-3 text-uppercase"><strong>Paso <span class="step-number">1</span></strong></h4>

@@ -11109,15 +11109,6 @@ h2,
   background-color: #191c21;
 }
 
-.cc-huawei-steps .item-content {
-  position: absolute;
-  left: 15px;
-  top: 0;
-  right: 15px;
-  bottom: 0;
-  z-index: 3;
-}
-
 .cc-huawei-steps .item-content .step-title {
   position: relative;
 }
@@ -11206,6 +11197,28 @@ h2,
 }
 
 @media (max-width: 767px) {
+  .navbar .logo {
+    width: 110px;
+  }
+
+  .navbar .logo-app_gallery {
+    width: 100px;
+  }
+
+  .navbar .navbar-toggler {
+    padding: 2px 6px;
+  }
+
+  .navbar .navbar-toggler-icon {
+    width: 30px;
+  }
+
+  .btn:not(.btn-sm):not(.btn-md) {
+    font-size: 14px;
+    padding: 4px 30px;
+    min-width: 1px;
+  }
+
   .item-list .item .item-title {
     font-size: 17px;
   }

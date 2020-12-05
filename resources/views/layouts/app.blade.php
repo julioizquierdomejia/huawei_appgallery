@@ -24,15 +24,15 @@
     <link href="{{ asset('owl.carousel/2.3.4/owl.carousel.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
   </head>
-  <body class="page text-white h-100 {{isset($body_class) ? $body_class : ''}}">
-    <main class="main h-100">
+  <body class="page text-white {{isset($body_class) ? $body_class : ''}}">
+    <main class="main">
       @include('layouts.header')
-      <div class="content h-100 pt-4">
+      <div class="content pt-4">
         @yield('content')
       </div>
-      {{-- <footer class="footer">
+      <footer class="footer">
         @include('layouts.footer')
-      </footer> --}}
+      </footer>
     </main>
     <!-- Modal -->
     <div class="modal fade" id="modalSoon" tabindex="-1" role="dialog" aria-labelledby="modalRegisterTitle" aria-hidden="true">
