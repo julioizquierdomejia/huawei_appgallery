@@ -27,24 +27,24 @@
 				<div class="col-6 item px-0">
 					<div class="item-content">
 						<img class="img-fluid" src="{{ asset('img/home/chico.png') }}">
-						<div class="item-text text-left pb-md-5">
+						<div class="item-text text-left pb-md-5 px-md-5">
 							<p class="text-above mb-1">Master Class Cocina con</p>
 							<h4 class="item-title mb-4">
 								<strong>José del Castillo</strong>
 							</h4>
-							<p>Básicos de la cocina peruana</p>
+							<p class="pb-md-5">Básicos de la cocina peruana</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-6 item px-0">
 					<div class="item-content">
 						<img class="img-fluid" src="{{ asset('img/home/chica.png') }}">
-						<div class="item-text text-left pb-md-5">
+						<div class="item-text text-left pb-md-5 px-md-5">
 							<p class="text-above mb-1">Master Class Gym con</p>
 							<h4 class="item-title mb-4">
 								<strong>Solange Barslund - "La Vikinga"</strong>
 							</h4>
-							<p>Entretenimiento Fullbody en casa</p>
+							<p class="pb-md-5">Entretenimiento Fullbody en casa</p>
 						</div>
 					</div>
 				</div>
