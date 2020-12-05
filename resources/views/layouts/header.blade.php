@@ -12,16 +12,16 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav ml-auto align-items-center">
-      <li class="nav-item active">
-        <a class="nav-link" href="#"><img src="{{ asset('img/exploralo-app-gallery.png') }}" width="140"></a>
-      </li>
       <li class="nav-item">
         @if (Auth::user())
       <form id="logout-form" action="{{ route('logout') }}" method="POST">
           @csrf
-          <button class="btn btn-sm text-white" href="/logout" style="min-width: 0" type="submit">Cerrar sesión <i class="fas fa-sign-out-alt"></i></button>
+          <button class="btn btn-sm text-white" href="/logout" style="font-size: 15px;min-width: 0" type="submit">Cerrar sesión <i class="fas fa-sign-out-alt"></i></button>
       </form>
       @endif
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><img src="{{ asset('img/exploralo-app-gallery.png') }}" width="140"></a>
       </li>
     </ul>
   </div>
