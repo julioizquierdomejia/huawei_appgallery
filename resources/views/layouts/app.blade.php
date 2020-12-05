@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html class="h-100" lang="en">
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-100">
   <head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/favicon.ico') }}">
@@ -9,6 +9,10 @@
     {{isset($title) ? $title . ' | ' : ''}} Huawei | Claro Club
     </title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     {{-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">

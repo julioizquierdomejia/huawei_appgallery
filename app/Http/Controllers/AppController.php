@@ -14,14 +14,14 @@ class AppController extends Controller
      */
     public function home()
     {
-        $email = \Cookie::get('email');
+        /*$email = \Cookie::get('user');
         if ($email) {
             $logged = true;
         } else {
             $logged = false;
-        }
-        return view('home', [
-            'logged' => $logged
+        }*/
+        return view('home.index', [
+            //'logged' => $logged
         ]);
     }
 

@@ -6,7 +6,7 @@
 			<div class="cc pl-lg-5 h-100">
 			<div class="row pl-lg-5 h-100">
 				<div class="col-12 pt-3 pt-lg-5 text-uppercase page-title mt-5">
-					<h1 class="title pt-md-4">{{ $user['name'] }}</h1>
+					<h1 class="title pt-md-4">{{ Auth::user()->name }}</h1>
 					<p class="text-uppercase mt-5" style="width: 60%;">
 						PREPÁRATE PARA DISFRUTAS DE NUESTRAS EXCLUSIVAS MASTERCLASSES
 					</p>

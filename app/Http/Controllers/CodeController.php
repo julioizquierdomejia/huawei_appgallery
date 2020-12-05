@@ -84,7 +84,7 @@ class CodeController extends Controller
                 $user->email = $email;
                 $user->save();
 
-                \Cookie::queue('email', $user->email, 1);
+                \Cookie::queue('email', $user->email, 100);
 
                 return redirect('vervideo');
             } else {
@@ -109,7 +109,7 @@ class CodeController extends Controller
             if ($get_user) {
                 $cookie_user = json_decode(\Cookie::get('user'), true);
             } else {
-                \Cookie::queue('user', json_encode($user), 1);
+                \Cookie::queue('user', json_encode($user), 100);
                 $cookie_user = \Cookie::get('user');
             }
             return view('opcion', [
@@ -136,7 +136,9 @@ class CodeController extends Controller
         $user = User::where('email', '=', $email)->first();
 
         if($user) {
-            \Cookie::queue('email', $email, 100);
+            //\Cookie::queue('email', $email, 100);
+            \Auth::login($user);
+
             return redirect('vervideo')->with('user');
         } else {
             return abort(404);
