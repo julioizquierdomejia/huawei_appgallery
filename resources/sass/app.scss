@@ -45,7 +45,7 @@ img {
 }
 
 h1, .h1, h2, .h2 {
-	font-family: 'HelveticaNeueLTStd HvCn', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 h3, h4, h5, h6,
 .h3, .h4, .h5, .h6 {
@@ -74,7 +74,8 @@ h3, h4, h5, h6,
 
 .page-title {
 	.title {
-		font-size: 42px;
+		font-size: 50px;
+		font-weight: 700;
 	}
 }
 
@@ -233,11 +234,11 @@ h3, h4, h5, h6,
 .item-list {
 	.item {
 		.item-title {
-			font-family: "HelveticaNeueLTStd HvCn", sans-serif;
-			font-size: 27px;
+			font-family: "Oswald", sans-serif;
+			font-size: 32px;
 		}
 		.text-above {
-			font-size: 21px;
+			font-size: 27px;
 		}
 		&:before {
 			background: linear-gradient(180deg, rgba(255,255,255,0.01) 0%, rgba(0,0,0,0.5) 50%, rgba(30,30,30,0.9) 100%);
@@ -256,7 +257,7 @@ h3, h4, h5, h6,
 		}
 
 		.item-text {
-			font-size: 21px;
+			font-size: 27px;
 			position: absolute;
 			left: 0;
 			right: 0;

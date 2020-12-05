@@ -6,7 +6,7 @@
 			<div class="cc pl-lg-5 h-100">
 			<div class="row pl-lg-5 h-100">
 				<div class="col-12 pt-3 pt-lg-5 text-uppercase page-title">
-					<h1 class="title">Gana Exclusivas</h1>
+					<h1 class="title pt-md-4">Gana Exclusivas</h1>
 					<p class="text-uppercase">MasterClasses con <br>AppGallery y Claro Club</p>
 				</div>
 				<div class="col-12 bottom mt-auto pb-3">
