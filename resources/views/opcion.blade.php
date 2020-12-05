@@ -34,7 +34,7 @@
 						<img class="img-fluid" src="{{ asset('img/home/chica.png') }}">
 						<div class="item-text text-left pb-md-5">
 							<p class="text-above mb-1">Master Class</p>
-							<p class="pb-md-2">Entretenimiento Fullbody en casa con</p>
+							<p class="pb-md-2">Entrenamiento Fullbody en casa con</p>
 							<h4 class="item-title mb-4">
 								<strong>Solange Barslund "La Vikinga"</strong>
 							</h4>
