@@ -11130,11 +11130,12 @@ h2,
 }
 
 .item-list .item .item-title {
-  font-size: 31px;
+  font-family: "HelveticaNeueLTStd HvCn", sans-serif;
+  font-size: 27px;
 }
 
 .item-list .item .text-above {
-  font-size: 25px;
+  font-size: 21px;
 }
 
 .item-list .item:before {
@@ -11151,7 +11152,7 @@ h2,
 }
 
 .item-list .item .item-text {
-  font-size: 22px;
+  font-size: 21px;
   position: absolute;
   left: 0;
   right: 0;

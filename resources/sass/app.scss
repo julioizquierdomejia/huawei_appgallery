@@ -233,10 +233,11 @@ h3, h4, h5, h6,
 .item-list {
 	.item {
 		.item-title {
-			font-size: 31px;
+			font-family: "HelveticaNeueLTStd HvCn", sans-serif;
+			font-size: 27px;
 		}
 		.text-above {
-			font-size: 25px;
+			font-size: 21px;
 		}
 		&:before {
 			background: linear-gradient(180deg, rgba(255,255,255,0.01) 0%, rgba(0,0,0,0.5) 50%, rgba(30,30,30,0.9) 100%);
@@ -255,7 +256,7 @@ h3, h4, h5, h6,
 		}
 
 		.item-text {
-			font-size: 22px;
+			font-size: 21px;
 			position: absolute;
 			left: 0;
 			right: 0;
