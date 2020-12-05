@@ -6,7 +6,7 @@
 @import '~bootstrap/scss/bootstrap';
 
 body {
-	background-color: #000;
+	background-color: $black;
 	font-weight: 500;
 }
 
@@ -14,12 +14,47 @@ img {
 	height: auto;
 }
 
+h1, .h1, h2, .h2 {
+	font-family: 'Bebas Neue', sans-serif;
+}
+h3, h4, h5, h6,
+.h3, .h4, .h5, .h6 {
+	//font-family: 'Anton', sans-serif;
+}
+
+.cc-huawei {
+	overflow: hidden;
+	min-height: 380px;
+	img {
+		max-height: 100%;
+	}
+}
+
+.btn {
+	border-radius: 20px;
+	padding: 9px 15px;
+	min-width: 200px;
+	text-transform: uppercase;
+	&.btn-red-transparent {
+		background-color: transparent;
+		border-color: $red;
+		color: $red;
+	}
+}
+
 .form-control {
-	background-color: transparent;
+	background-color: $white;
+	border-color: $black;
+	border-radius: 0;
+	height: 40px;
+	&:focus {
+
+	}
 }
 .f-group-w-icon {
 	position: relative;
 	.icon {
+		color: #999;
 		position: absolute;
 		right: 10px;
 		top: 50%;
@@ -28,5 +63,160 @@ img {
 	}
 	.form-control {
 		padding-right: 30px;
+	}
+}
+
+.modal {
+	&-header {
+		border-bottom-color: #555;
+	}
+	&-footer {
+		border-top-color: #555;
+	}
+}
+
+.owl-carousel {
+	&:before {
+		content: '';
+	    left: -999px;
+	    top: 0;
+	    bottom: 0;
+	    position: absolute;
+	    background: #191c21;
+	    width: 1059px;
+	    z-index: 2;
+	}
+	.owl-stage {
+		padding-left: 0 !important;
+	}
+	.owl-stage-outer {
+		overflow: visible;
+	}
+	.owl-nav {
+		button {
+			span {
+				display: block;
+			}
+			&.owl-prev, &.owl-next {
+				position: absolute;
+				top: 50%;
+				font-size: 60px;
+				line-height: 50px;
+				margin-top: -15px;
+				padding-bottom: 6px !important;
+				z-index: 3;
+			}
+			&.owl-prev {
+				left: 0;
+			}
+			&.owl-next {
+				right: 0;
+			}
+		}
+	}
+	.owl-dots {
+		margin-top: 20px;
+		text-align: center;
+		.owl-dot {
+			background-color: $white;
+			border-radius: 20px;
+			height: 10px;
+			width: 10px;
+			margin: 0 5px;
+		}
+	}
+
+	.i-inactive, .owl-item:not(.active) .item {
+		&:before {
+			background-color: rgba(10, 10, 10, .7);
+			content: '';
+			position: absolute;
+			left: 15px;
+			top: 0;
+			right: 15px;
+			bottom: 0;
+			z-index: 2;
+		}
+	}
+
+	.owl-item {
+		
+	}
+}
+
+.cc-huawei-steps {
+	background-color: #191c21;
+
+	.item-content {
+		position: absolute;
+		left: 15px;
+		top: 0;
+		right: 15px;
+		bottom: 0;
+		z-index: 3;
+		.step-title {
+			position: relative;
+			&:before {
+				background-color: $red;
+				content: '';
+				position: absolute;
+				height: 3px;
+				left: 0;
+				right: 0;
+				top: 100%;
+			}
+			&:after {
+			    background: $red;
+				clip-path: polygon(0 0, 100% 0, 65% 100%, 0 100%);
+				content: '';
+				position: absolute;
+			    left: 0;
+			    width: 50px;
+			    height: 10px;
+			    top: 100%;
+			}
+		}
+		.step-number {
+			clip-path: polygon(0 0, 80% 0%, 100% 20%, 100% 100%, 0 100%);
+			width: 45px;
+		    display: inline-block;
+		    background: $red;
+		    font-size: 20px;
+		    padding: 10px 8px;
+		    text-align: center;
+		}
+
+		.text {
+			font-size: 22px;
+		}
+	}
+}
+
+.item-list {
+	.item {
+		&:before {
+			background: linear-gradient(180deg, rgba(255,255,255,0.01) 0%, rgba(0,0,0,0.5) 50%, rgba(30,30,30,0.9) 100%);
+			/*background-image: url(/img/over_degrade.png);
+			background-position: center;
+			background-size: cover;*/
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+		}
+		&-content {
+
+		}
+
+		.item-text {
+			font-size: 20px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			padding: 20px;
+		}
 	}
 }
