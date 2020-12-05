@@ -17,10 +17,10 @@ class AppController extends Controller
         return view('home');
     }
 
-    public function register()
+    /*public function register()
     {
         return view('register');
-    }
+    }*/
 
     /**
      * Show the form for creating a new resource.

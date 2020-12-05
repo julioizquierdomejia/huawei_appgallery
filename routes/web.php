@@ -17,11 +17,11 @@ use Illuminate\Support\Facades\Route;
     return view('home');
 });*/
 
-Route::get('/', [App\Http\Controllers\AppController::class, 'home']);
-
-Route::get('/register', [App\Http\Controllers\AppController::class, 'register'])->name('registro');
+Route::get('/', [App\Http\Controllers\AppController::class, 'home'])->name('home');
 
 route::resource('codes', App\Http\Controllers\CodeController::class);
 
-Route::post('/vervideo', [App\Http\Controllers\CodeController::class, 'vervideo'])->name('codes.vervideo');
+Route::get('/register', [App\Http\Controllers\CodeController::class, 'register'])->name('registro');
+Route::post('/register', [App\Http\Controllers\CodeController::class, 'store'])->name('user.store');
+Route::get('/vervideo', [App\Http\Controllers\CodeController::class, 'vervideo'])->name('codes.vervideo');
 
