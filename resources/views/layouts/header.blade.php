@@ -2,9 +2,9 @@
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
   <a class="navbar-brand" href="/">
     <span class="d-flex align-items-center">
-      <img src="{{ asset('img/huawei-logo.svg') }}" width="120">
-      <span class="px-2 text-muted"> | </span>
-      <img src="{{ asset('img/claro-logo.svg') }}" width="70">
+      <img src="{{ asset('img/logo_huawei.png') }}" width="150">
+      <span class="px-2 text-muted"> <img src="{{ asset('img/raya.png') }}" width="2" height="40"> </span>
+      <img src="{{ asset('img/logo_claro.png') }}" width="140">
     </span>
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">

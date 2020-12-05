@@ -10,15 +10,18 @@
     </title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     @yield('css')
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
     <link href="{{ asset('fontawesome-free/css/all.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('owl.carousel/2.3.4/owl.carousel.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
   </head>
-  <body class="page pt-5 text-white h-100 {{isset($body_class) ? $body_class : ''}}">
-    <main class="main pt-5 h-100">
+  <body class="page text-white h-100 {{isset($body_class) ? $body_class : ''}}">
+    <main class="main h-100">
       @include('layouts.header')
-      <div class="content container h-100">
+      <div class="content h-100">
         @yield('content')
       </div>
       {{-- <footer class="footer">
@@ -51,12 +54,13 @@
           </div>
           <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-primary">Enviar</button>
+            <button type="button" class="btn btn-danger">Enviar</button>
           </div>
         </div>
       </div>
     </div>
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('owl.carousel/2.3.4/owl.carousel.js') }}"></script>
     @yield('javascript')
   </body>
 </html>
