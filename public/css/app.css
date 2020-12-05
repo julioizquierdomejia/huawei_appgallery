@@ -11010,14 +11010,23 @@ h2,
   border-top-color: #555;
 }
 
-.owl-carousel:before {
+.ow-parent {
+  position: relative;
+}
+
+.ow-parent .owl-content,
+.ow-parent .owl-carousel {
+  position: static;
+}
+
+.ow-parent:before {
   content: "";
   left: -999px;
   top: 0;
   bottom: 0;
   position: absolute;
   background: #191c21;
-  width: 1059px;
+  width: 999px;
   z-index: 2;
 }
 
@@ -11039,7 +11048,8 @@ h2,
   box-shadow: none;
   position: absolute;
   top: 50%;
-  font-size: 60px;
+  font-size: 90px;
+  font-family: serif;
   line-height: 50px;
   margin-top: -15px;
   padding-bottom: 6px !important;

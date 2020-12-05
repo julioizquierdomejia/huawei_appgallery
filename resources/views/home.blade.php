@@ -63,51 +63,28 @@
 	</div>
 </div>
 <div class="cc-huawei cc-huawei-steps pt-5">
-	<div class="container">
+	<div class="container ow-parent">
 	<div class="row pt-5">
-		<div class="col-12 py-4 py-md-5">
-			<div class="owl-carousel px-4 px-md-5">
-				<div class="item d-flex">
-					<span class="col i-active"><img class="img-fluid active" src="{{ asset('img/home/chico.png') }}"></span>
-					<span class="col i-inactive">
-						<img class="img-fluid" src="{{ asset('img/home/chica.png') }}">
-						<div class="item-content">
-							<div class="d-flex align-items-center h-100 p-4">
-								<div class="text px-md-4">
-									<h4 class="step-title text-right mb-3 text-uppercase"><strong>Paso <span class="step-number">1</span></strong></h4>
-									<p class="pl-5">Descarga la app de Claro Club desde el AppGallery de HUAWEI</p>
-								</div>
-							</div>
-						</div>
-					</span>
+		<div class="col-12 col-md-5 owl-content px-0">
+			<div class="owl-carousel owl-steps">
+				<div class="item" data-text="Descarga la app de Claro Club desde el AppGallery de HUAWEI">
+					<img class="img-fluid active" src="{{ asset('img/home/chico.png') }}">
 				</div>
-				<div class="item d-flex">
-					<span class="col i-active"><img class="img-fluid active" src="{{ asset('img/home/chico.png') }}"></span>
-					<span class="col i-inactive">
-						<img class="img-fluid" src="{{ asset('img/home/chica.png') }}">
-						<div class="item-content">
-							<div class="d-flex align-items-center h-100 p-4">
-								<div class="text px-md-4">
-									<h4 class="step-title text-right mb-3 text-uppercase"><strong>Paso <span class="step-number">2</span></strong></h4>
-									<p class="pl-5">Descarga la app de Claro Club desde el AppGallery de HUAWEI</p>
-								</div>
-							</div>
-						</div>
-					</span>
+				<div class="item" data-text="Usa la app de Claro Club desde el AppGallery de HUAWEI">
+					<img class="img-fluid" src="{{ asset('img/home/chica.png') }}">
 				</div>
-				<div class="item d-flex">
-					<span class="col i-active"><img class="img-fluid active" src="{{ asset('img/home/chico.png') }}"></span>
-					<span class="col i-inactive">
-						<img class="img-fluid" src="{{ asset('img/home/chica.png') }}">
-						<div class="item-content">
-							<div class="d-flex align-items-center h-100 p-4">
-								<div class="text px-md-4">
-									<h4 class="step-title text-right mb-3 text-uppercase"><strong>Paso <span class="step-number">3</span></strong></h4>
-									<p class="pl-5">Descarga la app de Claro Club desde el AppGallery de HUAWEI</p>
-								</div>
-							</div>
-						</div>
-					</span>
+				<div class="item" data-text="Inicia sesión">
+					<img class="img-fluid" src="{{ asset('img/home/chico.png') }}">
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-7 px-0">
+			<div class="owl-steps-current item-content">
+				<div class="d-flex align-items-center h-100 p-4">
+					<div class="text col-12 col-md-7 px-md-4">
+						<h4 class="step-title text-right mb-3 text-uppercase"><strong>Paso <span class="step-number">1</span></strong></h4>
+						<p class="pl-5">Descarga la app de Claro Club desde el AppGallery de HUAWEI</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -125,12 +102,13 @@
 		$('#collapseLogin').slideUp();
 		$('.f-buttons').slideDown();
 	})
-	$('.owl-carousel').owlCarousel({
+	var owl = $('.owl-carousel').owlCarousel({
 	    margin:10,
 	    responsiveClass:true,
-	    stagePadding: 100,
+	    //stagePadding: 100,
 	    nav: true,
 	    dots: true,
+	    mouseDrag: false,
 	    responsive:{
 	        0:{
 	            items:1,
@@ -147,5 +125,13 @@
 	        }
 	    }
 	})
+
+	owl.on('changed.owl.carousel', function(event) {
+	    var current = event.relatedTarget.current();
+	    var activeEls = $('.owl-item.active .item');
+	    //var data = $('.owl-steps').find('.owl-item .item').data('text');
+	    $('.owl-steps-current p').text(activeEls.data('text'));
+	    $('.step-title .step-number').text(current + 1);
+	  });
 </script>
 @endsection

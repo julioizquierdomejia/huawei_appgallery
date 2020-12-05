@@ -115,7 +115,11 @@ h3, h4, h5, h6,
 	}
 }
 
-.owl-carousel {
+.ow-parent {
+	position: relative;
+	.owl-content, .owl-carousel {
+		position: static;
+	}
 	&:before {
 		content: '';
 	    left: -999px;
@@ -123,9 +127,11 @@ h3, h4, h5, h6,
 	    bottom: 0;
 	    position: absolute;
 	    background: #191c21;
-	    width: 1059px;
+	    width: 999px;
 	    z-index: 2;
 	}
+}
+.owl-carousel {
 	.owl-stage {
 		padding-left: 0 !important;
 	}
@@ -142,7 +148,8 @@ h3, h4, h5, h6,
 				box-shadow: none;
 				position: absolute;
 				top: 50%;
-				font-size: 60px;
+				font-size: 90px;
+				font-family: serif;
 				line-height: 50px;
 				margin-top: -15px;
 				padding-bottom: 6px !important;
