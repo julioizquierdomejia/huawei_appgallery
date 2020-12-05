@@ -10959,10 +10959,23 @@ h2,
 
 .btn {
   border-radius: 35px;
+  text-transform: uppercase;
+}
+
+.btn:not(.btn-sm):not(.btn-md) {
   font-size: 20px;
   padding: 9px 15px;
   min-width: 200px;
-  text-transform: uppercase;
+}
+
+.btn.btn-danger {
+  border-color: #c50819;
+}
+
+.btn.btn-danger:hover,
+.btn.btn-danger:focus {
+  background-color: transparent;
+  color: #c50819;
 }
 
 .btn.btn-red-transparent {
@@ -11164,7 +11177,6 @@ h2,
 }
 
 .item-list .item .text-above {
-  font-size: 27px;
   line-height: 25px;
 }
 
@@ -11183,7 +11195,7 @@ h2,
 }
 
 .item-list .item .item-text {
-  font-size: 27px;
+  font-size: 25px;
   font-weight: 300;
   position: absolute;
   left: 0;
@@ -11191,5 +11203,15 @@ h2,
   bottom: 0;
   padding: 20px 35px;
   z-index: 2;
+}
+
+@media (max-width: 767px) {
+  .item-list .item .item-title {
+    font-size: 17px;
+  }
+
+  .item-list .item .item-text {
+    font-size: 15px;
+  }
 }
 

@@ -5,10 +5,10 @@
 		<div class="col-12 col-md-5 col-lg-4 py-2 pl-lg-5">
 			<div class="cc pl-lg-5 h-100">
 			<div class="row pl-lg-5 h-100">
-				<div class="col-12 pt-3 pt-lg-5 text-uppercase page-title mt-5">
+				<div class="col-12 pt-3 pt-lg-5 text-uppercase page-title mt-md-5">
 					<h1 class="title pt-md-4">{{ Auth::user()->name }}</h1>
-					<p class="text-uppercase mt-5" style="width: 60%;">
-						PREPÁRATE PARA DISFRUTAS DE NUESTRAS EXCLUSIVAS MASTERCLASSES
+					<p class="text-uppercase mt-5" style="font-size: 20px;width: 60%;">
+						PREPÁRATE PARA DISFRUTA DE NUESTRAS EXCLUSIVAS MASTERCLASSES
 					</p>
 				</div>
 			</div>
@@ -20,11 +20,12 @@
 					<div class="item-content">
 						<img class="img-fluid" src="{{ asset('img/home/chico.png') }}">
 						<div class="item-text text-left pb-md-5">
-							<p class="text-above mb-1">Master Class Cocina con</p>
+							<p class="text-above mb-1">Master Class</p>
+							<p class="pb-md-2">Básicos de la cocina peruana con</p>
 							<h4 class="item-title mb-4">
 								<strong>José del Castillo</strong>
 							</h4>
-							<p class="pb-md-5">Básicos de la cocina peruana</p>
+							<button class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalSoon">Ver vídeo</button>
 						</div>
 					</div>
 				</div>
@@ -32,11 +33,12 @@
 					<div class="item-content">
 						<img class="img-fluid" src="{{ asset('img/home/chica.png') }}">
 						<div class="item-text text-left pb-md-5">
-							<p class="text-above mb-1">Master Class Gym con</p>
+							<p class="text-above mb-1">Master Class</p>
+							<p class="pb-md-2">Entretenimiento Fullbody en casa con</p>
 							<h4 class="item-title mb-4">
 								<strong>Solange Barslund - "La Vikinga"</strong>
 							</h4>
-							<p class="pb-md-5">Entretenimiento Fullbody en casa</p>
+							<button class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalSoon">Ver vídeo</button>
 						</div>
 					</div>
 				</div>

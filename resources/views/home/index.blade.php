@@ -44,11 +44,12 @@
 					<div class="item-content">
 						<img class="img-fluid" src="{{ asset('img/home/chico.png') }}">
 						<div class="item-text text-left pb-md-5">
-							<p class="text-above mb-1">Master Class Cocina con</p>
+							<p class="text-above mb-1">Master Class</p>
+							<p class="pb-md-2">Básicos de la cocina peruana con</p>
 							<h4 class="item-title mb-4">
 								<strong>José del Castillo</strong>
 							</h4>
-							<p class="pb-md-5">Básicos de la cocina peruana</p>
+							<button class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalSoon">Ver vídeo</button>
 						</div>
 					</div>
 				</div>
@@ -56,11 +57,12 @@
 					<div class="item-content">
 						<img class="img-fluid" src="{{ asset('img/home/chica.png') }}">
 						<div class="item-text text-left pb-md-5">
-							<p class="text-above mb-1">Master Class Gym con</p>
+							<p class="text-above mb-1">Master Class</p>
+							<p class="pb-md-2">Entretenimiento Fullbody en casa con</p>
 							<h4 class="item-title mb-4">
 								<strong>Solange Barslund - "La Vikinga"</strong>
 							</h4>
-							<p class="pb-md-5">Entretenimiento Fullbody en casa</p>
+							<button class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalSoon">Ver vídeo</button>
 						</div>
 					</div>
 				</div>

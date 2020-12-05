@@ -35,48 +35,20 @@
       </footer> --}}
     </main>
     <!-- Modal -->
-    <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="modalRegisterTitle" aria-hidden="true">
+    <div class="modal fade" id="modalSoon" tabindex="-1" role="dialog" aria-labelledby="modalRegisterTitle" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content bg-dark">
           <div class="modal-header">
-            <h5 class="modal-title" id="modalRegisterTitle">Regístrate</h5>
+            <h5 class="modal-title" id="modalRegisterTitle">Pronto</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            <div class="form-group">
-              <label class="sr-only" for="u-name">Nombres</label>
-              <input type="text" id="u-name" name="name" class="form-control user-name" placeholder="Nombres">
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="u-email">Correo</label>
-              <input type="text" id="u-email" name="email" class="form-control user-email" placeholder="correo electrónico">
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="u-code">Celular</label>
-              <input type="text" id="u-code" name="celular" class="form-control user-code" placeholder="Celular">
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="u-code">DNI</label>
-              <input type="text" id="u-code" name="DNI" class="form-control user-code" placeholder="DNI">
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="u-code">Código</label>
-              <div class="row">
-                <div class="col-11">
-                  <input type="text" id="u-code" name="code" class="form-control user-code" placeholder="Código">
-                </div>
-                <div class="col-1">
-                  <a href=""><i class="fas fa-question-circle"></i></a>
-                </div>
-              </div>
-
-            </div>
+          <div class="modal-body text-center">
+            <p>Pronto vídeos exclusivos para ti.</p>
           </div>
-          <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-danger">Enviar</button>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
           </div>
         </div>
       </div>

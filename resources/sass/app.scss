@@ -62,10 +62,19 @@ h3, h4, h5, h6,
 
 .btn {
 	border-radius: 35px;
-	font-size: 20px;
-	padding: 9px 15px;
-	min-width: 200px;
 	text-transform: uppercase;
+	&:not(.btn-sm):not(.btn-md) {
+		font-size: 20px;
+		padding: 9px 15px;
+		min-width: 200px;
+	}
+	&.btn-danger {
+		border-color: $red;
+		&:hover, &:focus {
+			background-color: transparent;
+			color: $red;
+		}
+	}
 	&.btn-red-transparent {
 		background-color: transparent;
 		border-color: $red;
@@ -262,7 +271,7 @@ h3, h4, h5, h6,
 			font-size: 32px;
 		}
 		.text-above {
-			font-size: 27px;
+			//font-size: 25px;
 			line-height: 25px;
 		}
 		&:before {
@@ -283,7 +292,7 @@ h3, h4, h5, h6,
 		}
 
 		.item-text {
-			font-size: 27px;
+			font-size: 25px;
 			font-weight: 300;
 			position: absolute;
 			left: 0;
@@ -291,6 +300,19 @@ h3, h4, h5, h6,
 			bottom: 0;
 			padding: 20px 35px;
 			z-index: 2;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.item-list {
+		.item {
+			.item-title {
+				font-size: 17px;
+			}
+			.item-text {
+				font-size: 15px;
+			}
 		}
 	}
 }
