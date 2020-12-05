@@ -1,0 +1,41 @@
+@charset "UTF-8";
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//fontawesome
+@import "scss/fontawesome.scss";
+@import "scss/brands.scss";
+@import "scss/solid.scss";
+@import "scss/regular.scss";
+@import "scss/light.scss";
+@import "scss/duotone.scss";
+@import "scss/v4-shims.scss";
+
+body {
+	background-color: #000;
+	font-weight: 500;
+}
+
+img {
+	height: auto;
+}
+
+.form-control {
+	background-color: transparent;
+}
+.f-group-w-icon {
+	position: relative;
+	.icon {
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		font-size: 20px;
+		margin-top: -10px;
+	}
+	.form-control {
+		padding-right: 30px;
+	}
+}
