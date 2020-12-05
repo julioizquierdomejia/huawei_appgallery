@@ -23,5 +23,5 @@ Route::get('/register', [App\Http\Controllers\AppController::class, 'register'])
 
 route::resource('codes', App\Http\Controllers\CodeController::class);
 
-Route::get('/vevideo', [App\Http\Controllers\CodeController::class, 'vevideo'])->name('codes.vervideo');
+Route::post('/vervideo', [App\Http\Controllers\CodeController::class, 'vervideo'])->name('codes.vervideo');
 

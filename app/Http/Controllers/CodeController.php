@@ -37,17 +37,11 @@ class CodeController extends Controller
     public function store(Request $request)
     {
         //
-        $correo = $request->email;
-        $user = User::where('email', '=', $correo)->first();
-
-        if($user)
-            return view('opcion', compact('user'));
-        else
-            return view('register');
+        return $request;
         
     }
 
-    public function vevideo(Request $request)
+    public function vervideo(Request $request)
     {
         //
         $correo = $request->email;
