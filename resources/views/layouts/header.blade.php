@@ -1,9 +1,9 @@
 <header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark pt-md-4">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark pt-md-4 px-xl-5">
   <a class="navbar-brand" href="/">
     <span class="d-flex align-items-center">
       <img src="{{ asset('img/logo_huawei.png') }}" width="180">
-      <span class="px-2 text-muted"> <img src="{{ asset('img/raya.png') }}" width="3" height="50"> </span>
+      <span class="px-3 text-muted"> <img src="{{ asset('img/raya.png') }}" width="3" height="50"> </span>
       <img src="{{ asset('img/logo_claro.png') }}" width="160" style="margin-bottom: 8px">
     </span>
   </a>
