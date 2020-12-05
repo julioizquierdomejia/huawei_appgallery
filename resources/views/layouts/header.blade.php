@@ -5,6 +5,12 @@
       <img src="{{ asset('img/logo_huawei.png') }}" width="180">
       <span class="px-3 text-muted"> <img src="{{ asset('img/raya.png') }}" width="3" height="50"> </span>
       <img src="{{ asset('img/logo_claro.png') }}" width="160" style="margin-bottom: 8px">
+      @if (Auth::user())
+      <form id="logout-form" action="{{ route('logout') }}" method="POST">
+          @csrf
+          <button class="btn text-white" href="/logout" style="min-width: 0" type="submit"><i class="fas fa-sign-out-alt"></i></button>
+      </form>
+      @endif
     </span>
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
