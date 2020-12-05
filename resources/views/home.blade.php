@@ -12,7 +12,7 @@
 				<div class="col-12 bottom mt-auto pb-5">
 					<div class="login-frm pr-2 pr-lg-5 pb-5">
 						<div class="collapse-frm" id="collapseLogin" style="display: none;">
-							<form action="{{ route('codes.vevideo') }}" method="POST" >
+							<form action="{{ route('codes.vervideo') }}" method="POST" >
         					@csrf
 								<div class="form-group f-group-w-icon">
 									<input type="text" name="email" class="form-control" placeholder="correo electrónico" required="">
