@@ -10908,6 +10908,11 @@ body {
   font-weight: 500;
 }
 
+header .navbar {
+  background-color: #000 !important;
+  box-shadow: 0 0px 80px 10px #000;
+}
+
 img {
   height: auto;
 }
@@ -10939,6 +10944,10 @@ h2,
   background-color: transparent;
   border-color: #c50819;
   color: #c50819;
+}
+
+.page-title .title {
+  font-size: 50px;
 }
 
 .form-control {
@@ -10998,6 +11007,8 @@ h2,
 
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
+  outline: none;
+  box-shadow: none;
   position: absolute;
   top: 50%;
   font-size: 60px;
@@ -11092,6 +11103,14 @@ h2,
 
 .cc-huawei-steps .item-content .text {
   font-size: 22px;
+}
+
+.item-list .item .item-title {
+  font-size: 32px;
+}
+
+.item-list .item .text-above {
+  font-size: 25px;
 }
 
 .item-list .item:before {

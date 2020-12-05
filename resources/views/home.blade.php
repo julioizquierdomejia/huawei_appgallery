@@ -4,7 +4,7 @@
 	<div class="row pt-5 pb-3">
 		<div class="col-12 col-md-5 col-lg-4 py-2 pl-lg-5">
 			<div class="row pl-lg-5 h-100">
-				<div class="col-12 pt-3 pt-lg-5 text-uppercase">
+				<div class="col-12 pt-3 pt-lg-5 text-uppercase page-title">
 					<h1 class="title">Gana Exclusivas</h1>
 					<p class="text-uppercase">MasterClasses con <br>AppGallery y Claro Club</p>
 				</div>
@@ -16,8 +16,8 @@
 								<i class="fa fa-envelope icon"></i>
 							</form>
 						</div>
-						<button class="btn btn-red-transparent btn-login btn-block" type="button" data-toggle="collapse" data-target="#collapseLogin">Ingresar <i class="fa fa-play pl-2"></i></button>
-						<button class="btn btn-danger btn-login btn-block mt-2" type="button" data-toggle="modal" data-target="#modalRegister">Regístrate <i class="fa fa-user pl-2"></i></button>
+						<button class="btn btn-red-transparent btn-login" type="button" data-toggle="collapse" data-target="#collapseLogin">Ingresar <i class="fa fa-play pl-2"></i></button>
+						<button class="btn btn-danger btn-login mt-2" type="button" data-toggle="modal" data-target="#modalRegister">Regístrate <i class="fa fa-user pl-2"></i></button>
 					</div>
 				</div>
 			</div>
