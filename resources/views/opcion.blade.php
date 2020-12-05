@@ -5,10 +5,10 @@
 		<div class="col-12 col-md-5 col-lg-4 py-2 pl-lg-5">
 			<div class="cc pl-lg-5 h-100">
 			<div class="row pl-lg-5 h-100">
-				<div class="col-12 pt-3 pt-lg-5 text-uppercase page-title mt-md-5">
+				<div class="col-12 pt-3 pt-lg-5 page-title mt-md-5">
 					<h1 class="title pt-md-4">{{ Auth::user()->name }}</h1>
-					<p class="text-uppercase mt-5" style="font-size: 20px;width: 60%;">
-						PREPÁRATE PARA DISFRUTA DE NUESTRAS EXCLUSIVAS MASTERCLASSES
+					<p class="mt-5" style="font-size: 20px;width: 60%;">
+						Prepárate para disfrutar de nuestras exclusivas MasterClasses
 					</p>
 				</div>
 			</div>

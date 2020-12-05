@@ -49,7 +49,7 @@
 							<h4 class="item-title mb-4">
 								<strong>José del Castillo</strong>
 							</h4>
-							<button class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalSoon">Ver vídeo</button>
+							<!--button class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalSoon">Ver vídeo</button-->
 						</div>
 					</div>
 				</div>
@@ -60,9 +60,9 @@
 							<p class="text-above mb-1">Master Class</p>
 							<p class="pb-md-2">Entretenimiento Fullbody en casa con</p>
 							<h4 class="item-title mb-4">
-								<strong>Solange Barslund - "La Vikinga"</strong>
+								<strong>Solange Barslund <br>"La Vikinga"</strong>
 							</h4>
-							<button class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalSoon">Ver vídeo</button>
+							<!--button class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalSoon">Ver vídeo</button-->
 						</div>
 					</div>
 				</div>
