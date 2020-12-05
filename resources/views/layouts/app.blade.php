@@ -25,7 +25,37 @@
         @include('layouts.footer')
       </footer> --}}
     </main>
-    <!--   Core JS Files   -->
+    <!-- Modal -->
+    <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="modalRegisterTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalRegisterTitle">Regístrate</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label class="sr-only" for="u-name">Nombres</label>
+              <input type="text" id="u-name" name="name" class="form-control user-name" placeholder="Nombres">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="u-email">Nombres</label>
+              <input type="text" id="u-email" name="email" class="form-control user-email" placeholder="correo electrónico">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="u-code">Código</label>
+              <input type="text" id="u-code" name="code" class="form-control user-code" placeholder="Código">
+            </div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
     @yield('javascript')
   </body>

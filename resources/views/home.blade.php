@@ -16,7 +16,7 @@
 						</div>
 					</div>
 					<button class="btn btn-light btn-login btn-block" type="button" data-toggle="collapse" data-target="#collapseLogin">Ingresar <i class="fa fa-play pl-2"></i></button>
-					<button class="btn btn-danger btn-login btn-block mt-2" type="button">Regístrate <i class="fa fa-user pl-2"></i></button>
+					<button class="btn btn-danger btn-login btn-block mt-2" type="button" data-toggle="modal" data-target="#modalRegister">Regístrate <i class="fa fa-user pl-2"></i></button>
 				</div>
 			</div>
 		</div>
