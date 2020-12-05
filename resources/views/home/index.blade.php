@@ -29,7 +29,7 @@
 						</div>
 						<div class="f-buttons">
 							<p style="font-size: 16px; opacity: 0.7" class="ml-3">¿Ya tienes una cuenta?</p>
-						<button class="btn btn-red-transparent btn-s-login mb-4" type="button">Ingresar <i class="fa fa-play pl-2"></i></button>
+						<button class="btn btn-red-transparent btn-s-login mb-4" type="button">Ingresar Aquí<i class="fa fa-play pl-2"></i></button>
 						
 						<a href="{{ route('registro') }}" class="btn btn-danger btn-s-register mt-2">registrar<i class="fa fa-user pl-2"></i></a>
 						<!--button class="btn btn-danger btn-s-register mt-2" type="button" data-toggle="modal" data-target="#modalRegister">Regístrate <i class="fa fa-user pl-2"></i></button-->
