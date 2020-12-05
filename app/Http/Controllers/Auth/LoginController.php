@@ -34,11 +34,11 @@ class LoginController extends Controller
      * @return void
      */
 
-    protected function attemptLogin(Request $request)
+    /*protected function attemptLogin(Request $request)
     {
         $attempt = auth()->attempt(['email' => $request->email, 'password' => 12345678]);
         return ($attempt);
-    }
+    }*/
 
     public function __construct()
     {

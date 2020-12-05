@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Code;
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 
 class CodeController extends Controller
 {
@@ -80,11 +81,13 @@ class CodeController extends Controller
                 $user->last_name = $last_name;
                 $user->celular = $phone;
                 $user->dni = $dni;
-                $user->password = 12345678;
+                $user->password = Hash::make(12345678);
                 $user->email = $email;
                 $user->save();
 
-                \Cookie::queue('email', $user->email, 100);
+                \Auth::login($user);
+
+                //\Cookie::queue('email', $user->email, 100);
 
                 return redirect('vervideo');
             } else {
@@ -101,19 +104,19 @@ class CodeController extends Controller
 
     public function vervideo(Request $request)
     {
-        $email = \Cookie::get('email');
-        $user = User::where('email', '=', $email)->first();
+        //$email = \Cookie::get('email');
+        //$user = User::where('email', '=', $email)->first();
 
-        if($user) {
-            $get_user = \Cookie::get('user');
-            if ($get_user) {
+        if(\Auth::user()) {
+            //$get_user = \Cookie::get('user');
+            /*if ($get_user) {
                 $cookie_user = json_decode(\Cookie::get('user'), true);
             } else {
                 \Cookie::queue('user', json_encode($user), 100);
                 $cookie_user = \Cookie::get('user');
-            }
+            }*/
             return view('opcion', [
-                'user' => $cookie_user
+                //'user' => $cookie_user
             ]);
         } else {
             return redirect('/');
@@ -141,7 +144,7 @@ class CodeController extends Controller
 
             return redirect('vervideo')->with('user');
         } else {
-            return abort(404);
+            return redirect('/');
         }
     }
 

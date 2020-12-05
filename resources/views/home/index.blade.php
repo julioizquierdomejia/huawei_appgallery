@@ -15,7 +15,7 @@
 						<a class="btn btn-danger" href="/vervideo">Ver vídeos</a>
 						@else
 						<div class="collapse-frm" id="collapseLogin" style="display: none;">
-							<form action="{{ route('login') }}" method="POST" >
+							<form action="{{ route('ingresar') }}" method="POST" >
         					@csrf
 								<div class="form-group f-group-w-icon">
 									<input type="text" name="email" class="form-control" placeholder="correo electrónico" required="">
@@ -74,13 +74,13 @@
 		<div class="col-12 col-md-5 owl-content px-0">
 			<div class="owl-carousel owl-steps pb-5">
 				<div class="item" data-text="Descarga la app de Claro Club desde el AppGallery de HUAWEI">
-					<img class="img-fluid active" src="{{ asset('img/home/chico.png') }}">
+					<img class="img-fluid active" src="{{ asset('img/home/d1.png') }}">
 				</div>
 				<div class="item" data-text="Usa la app de Claro Club desde el AppGallery de HUAWEI">
-					<img class="img-fluid" src="{{ asset('img/home/chica.png') }}">
+					<img class="img-fluid" src="{{ asset('img/home/d2.png') }}">
 				</div>
 				<div class="item" data-text="Inicia sesión">
-					<img class="img-fluid" src="{{ asset('img/home/chico.png') }}">
+					<img class="img-fluid" src="{{ asset('img/home/d3.png') }}">
 				</div>
 			</div>
 		</div>
