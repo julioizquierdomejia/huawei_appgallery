@@ -74,13 +74,13 @@
 		<div class="col-12 col-md-5 owl-content px-0">
 			<div class="owl-carousel owl-steps pb-5">
 				<div class="item" data-text="Descarga la app de Claro Club desde el AppGallery de HUAWEI">
-					<img class="img-fluid active" src="{{ asset('img/home/chico.png') }}">
+					<img class="img-fluid active" src="{{ asset('img/home/d1.png') }}">
 				</div>
 				<div class="item" data-text="Usa la app de Claro Club desde el AppGallery de HUAWEI">
-					<img class="img-fluid" src="{{ asset('img/home/chica.png') }}">
+					<img class="img-fluid" src="{{ asset('img/home/d2.png') }}">
 				</div>
 				<div class="item" data-text="Inicia sesión">
-					<img class="img-fluid" src="{{ asset('img/home/chico.png') }}">
+					<img class="img-fluid" src="{{ asset('img/home/d3.png') }}">
 				</div>
 			</div>
 		</div>
