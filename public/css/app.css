@@ -11131,6 +11131,18 @@ h2,
   font-size: 22px;
 }
 
+.item-list .item-content {
+  overflow: hidden;
+}
+
+.item-list .item img {
+  transition: all 0.5s;
+}
+
+.item-list .item:hover img {
+  transform: scale(1.1);
+}
+
 .item-list .item .item-title {
   font-family: "Oswald", sans-serif;
   font-size: 32px;
@@ -11152,6 +11164,7 @@ h2,
   top: 0;
   right: 0;
   bottom: 0;
+  z-index: 1;
 }
 
 .item-list .item .item-text {
@@ -11162,5 +11175,6 @@ h2,
   right: 0;
   bottom: 0;
   padding: 20px 35px;
+  z-index: 2;
 }
 
