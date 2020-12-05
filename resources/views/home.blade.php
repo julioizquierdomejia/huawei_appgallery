@@ -1,8 +1,9 @@
 @extends('layouts.app', ['title' => 'Home'])
 @section('content')
 <div class="cc-huawei pt-5 container-fluid">
-	<div class="row pt-5 pb-3">
+	<div class="row pt-5 pb-3 pl-lg-5">
 		<div class="col-12 col-md-5 col-lg-4 py-2 pl-lg-5">
+			<div class="cc pl-lg-5 h-100">
 			<div class="row pl-lg-5 h-100">
 				<div class="col-12 pt-3 pt-lg-5 text-uppercase page-title">
 					<h1 class="title">Gana Exclusivas</h1>
@@ -20,6 +21,7 @@
 						<button class="btn btn-danger btn-login mt-2" type="button" data-toggle="modal" data-target="#modalRegister">Regístrate <i class="fa fa-user pl-2"></i></button>
 					</div>
 				</div>
+			</div>
 			</div>
 		</div>
 		<div class="col-12 col-md-7 col-lg-8 item-list">
