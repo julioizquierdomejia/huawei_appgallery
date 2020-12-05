@@ -10,15 +10,21 @@
 					<p class="text-uppercase">MasterClasses con <br>AppGallery y Claro Club</p>
 				</div>
 				<div class="col-12 bottom mt-auto pb-5">
-					<div class="buttons pr-2 pr-lg-5 pb-5">
-						<div class="collapse" id="collapseLogin">
-							<form class="form-group f-group-w-icon" action="" method="POST">
-								<input type="text" name="email" class="form-control" placeholder="correo electrónico" required="">
-								<i class="fa fa-envelope icon"></i>
+					<div class="login-frm pr-2 pr-lg-5 pb-5">
+						<div class="collapse-frm" id="collapseLogin" style="display: none;">
+							<form class="form" action="" method="POST">
+								<div class="form-group f-group-w-icon">
+									<input type="text" name="email" class="form-control" placeholder="correo electrónico" required="">
+									<i class="fa fa-envelope icon"></i>
+								</div>
+								<button class="btn btn-red-transparent btn-login mb-1" type="submit">Ingresar <i class="fa fa-play pl-2"></i></button>
+								<button class="btn btn-danger btn-cancel mt-2" type="button">Cancelar</button>
 							</form>
 						</div>
-						<button class="btn btn-red-transparent btn-login mb-4" type="button" data-toggle="collapse" data-target="#collapseLogin">Ingresar <i class="fa fa-play pl-2"></i></button>
-						<button class="btn btn-danger btn-login mt-2" type="button" data-toggle="modal" data-target="#modalRegister">Regístrate <i class="fa fa-user pl-2"></i></button>
+						<div class="f-buttons">
+						<button class="btn btn-red-transparent btn-s-login mb-4" type="button">Ingresar <i class="fa fa-play pl-2"></i></button>
+						<button class="btn btn-danger btn-s-register mt-2" type="button" data-toggle="modal" data-target="#modalRegister">Regístrate <i class="fa fa-user pl-2"></i></button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -109,6 +115,14 @@
 @endsection
 @section('javascript')
 <script type="text/javascript">
+	$('.btn-s-login').on('click', function (event) {
+		$('#collapseLogin').slideDown();
+		$('.f-buttons').slideUp();
+	})
+	$('.btn-cancel').on('click', function (event) {
+		$('#collapseLogin').slideUp();
+		$('.f-buttons').slideDown();
+	})
 	$('.owl-carousel').owlCarousel({
 	    margin:10,
 	    responsiveClass:true,
