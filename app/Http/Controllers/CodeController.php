@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Code;
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class CodeController extends Controller
 {
@@ -36,7 +37,29 @@ class CodeController extends Controller
     public function store(Request $request)
     {
         //
+        $correo = $request->email;
+        $user = User::where('email', '=', $correo)->first();
+
+        if($user)
+            return view('opcion', compact('user'));
+        else
+            return view('register');
+        
     }
+
+    public function vevideo(Request $request)
+    {
+        //
+        $correo = $request->email;
+        $user = User::where('email', '=', $correo)->first();
+
+        if($user)
+            return view('opcion', compact('user'));
+        else
+            return view('register');
+        
+    }
+
 
     /**
      * Display the specified resource.
