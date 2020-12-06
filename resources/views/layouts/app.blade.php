@@ -9,7 +9,6 @@
     {{isset($title) ? $title . ' | ' : ''}} Huawei | Claro Club
     </title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
@@ -23,6 +22,14 @@
     <link href="{{ asset('fontawesome-free/css/all.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('owl.carousel/2.3.4/owl.carousel.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/app.css') }}?v=2" rel="stylesheet" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G20W6JCXE0"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G20W6JCXE0');
+    </script>
   </head>
   <body class="page text-white {{isset($body_class) ? $body_class : ''}}">
     <main class="main" style="display: flex;flex-direction: column;min-height: 100vh;">
