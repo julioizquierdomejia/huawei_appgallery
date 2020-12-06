@@ -22,7 +22,7 @@
     @yield('css')
     <link href="{{ asset('fontawesome-free/css/all.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('owl.carousel/2.3.4/owl.carousel.css') }}" rel="stylesheet" />
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/app.css') }}?v=2" rel="stylesheet" />
   </head>
   <body class="page text-white {{isset($body_class) ? $body_class : ''}}">
     <main class="main" style="display: flex;flex-direction: column;min-height: 100vh;">
