@@ -37,6 +37,7 @@ header {
 	.navbar {
 		background-color: $black !important;
 		box-shadow: 0 0px 50px 35px $black;
+		line-height: 15px;
 	}
 }
 
@@ -57,6 +58,13 @@ h3, h4, h5, h6,
 	min-height: 380px;
 	img {
 		max-height: 100%;
+	}
+}
+
+button {
+	&:focus {
+		box-shadow: none;
+		outline: none;
 	}
 }
 
@@ -178,12 +186,18 @@ h3, h4, h5, h6,
 		right: 0;
 		bottom: 0;
 		text-align: center;
+		z-index: 3;
 		.owl-dot {
 			background-color: $white;
 			border-radius: 20px;
 			height: 10px;
 			width: 10px;
 			margin: 0 5px;
+			transition: all .25s;
+			&.active {
+				background-color: $red;
+				transform: scale(1.5);
+			}
 		}
 	}
 
@@ -301,11 +315,11 @@ h3, h4, h5, h6,
 @media (max-width: 767px) {
 	.navbar {
 		.logo {
-			width: 110px;
+			width: 100px;
 		}
 
 		.logo-app_gallery {
-			width: 100px;
+			width: 90px;
 		}
 
 		.navbar-toggler {
@@ -313,6 +327,9 @@ h3, h4, h5, h6,
 			&-icon {
 				width: 30px;
 			}
+		}
+		.raya {
+			width: 2px;
 		}
 	}
 	.btn {

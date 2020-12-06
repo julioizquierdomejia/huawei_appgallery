@@ -42,7 +42,7 @@
 		</div>
 		<div class="col-12 col-md-7 col-lg-8 item-list">
 			<div class="row text-center">
-				<div class="col-6 item px-0">
+				<div class="col-12 col-sm-6 item px-0">
 					<div class="item-content">
 						<img class="img-fluid" src="{{ asset('img/home/chico.png') }}">
 						<div class="item-text text-left pb-md-5">
@@ -55,7 +55,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-6 item px-0">
+				<div class="col-12 col-sm-6 item px-0">
 					<div class="item-content">
 						<img class="img-fluid" src="{{ asset('img/home/chica.png') }}">
 						<div class="item-text text-left pb-md-5">

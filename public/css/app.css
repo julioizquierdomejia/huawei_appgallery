@@ -10935,6 +10935,7 @@ body {
 header .navbar {
   background-color: #000 !important;
   box-shadow: 0 0px 50px 35px #000;
+  line-height: 15px;
 }
 
 img {
@@ -10955,6 +10956,11 @@ h2,
 
 .cc-huawei img {
   max-height: 100%;
+}
+
+button:focus {
+  box-shadow: none;
+  outline: none;
 }
 
 .btn {
@@ -11083,6 +11089,7 @@ h2,
   right: 0;
   bottom: 0;
   text-align: center;
+  z-index: 3;
 }
 
 .owl-carousel .owl-dots .owl-dot {
@@ -11091,6 +11098,12 @@ h2,
   height: 10px;
   width: 10px;
   margin: 0 5px;
+  transition: all 0.25s;
+}
+
+.owl-carousel .owl-dots .owl-dot.active {
+  background-color: #c50819;
+  transform: scale(1.5);
 }
 
 .owl-carousel .i-inactive:before,
@@ -11198,11 +11211,11 @@ h2,
 
 @media (max-width: 767px) {
   .navbar .logo {
-    width: 110px;
+    width: 100px;
   }
 
   .navbar .logo-app_gallery {
-    width: 100px;
+    width: 90px;
   }
 
   .navbar .navbar-toggler {
@@ -11211,6 +11224,10 @@ h2,
 
   .navbar .navbar-toggler-icon {
     width: 30px;
+  }
+
+  .navbar .raya {
+    width: 2px;
   }
 
   .btn:not(.btn-sm):not(.btn-md) {
