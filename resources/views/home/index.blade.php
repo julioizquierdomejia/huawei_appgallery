@@ -84,7 +84,7 @@
 					<img class="img-fluid" src="{{ asset('img/home/d2.png') }}" alt="Copia tu código único para entrar al Masterclass">
 				</div>
 				<div class="item" data-text="¡Y listo! Aprende con nuestros expertos en cocina y fitness.">
-					<img class="img-fluid" src="{{ asset('img/home/d3-n.png') }}" alt="Aprende con nuestros expertos en cocina y fitness">
+					<img class="img-fluid" src="{{ asset('img/home/d3-n.jpg') }}" alt="Aprende con nuestros expertos en cocina y fitness">
 				</div>
 			</div>
 		</div>
