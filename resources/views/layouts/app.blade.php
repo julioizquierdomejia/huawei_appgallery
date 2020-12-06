@@ -25,7 +25,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
   </head>
   <body class="page text-white {{isset($body_class) ? $body_class : ''}}">
-    <main class="main">
+    <main class="main" style="display: flex;flex-direction: column;min-height: 100vh;">
       @include('layouts.header')
       <div class="content pt-4">
         @yield('content')

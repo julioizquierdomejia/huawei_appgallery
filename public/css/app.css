@@ -11004,6 +11004,11 @@ button:focus {
   font-size: 20px;
 }
 
+.form-control:focus {
+  outline: none;
+  border-bottom-color: #c50819;
+}
+
 .f-group-w-icon {
   position: relative;
 }
@@ -11207,6 +11212,16 @@ button:focus {
   bottom: 0;
   padding: 20px 35px;
   z-index: 2;
+}
+
+@media (max-width: 1400px) {
+  .cc-huawei .cc {
+    padding-left: 0 !important;
+  }
+
+  .cc-huawei .cc > .row {
+    padding-left: 0 !important;
+  }
 }
 
 @media (max-width: 767px) {

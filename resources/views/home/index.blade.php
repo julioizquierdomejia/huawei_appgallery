@@ -21,9 +21,9 @@
 									<input type="text" name="email" class="form-control" placeholder="correo electrónico" required="">
 									<i class="fa fa-envelope icon"></i>
 								</div>
-								<div class="frm-buttons d-flex justify-content-between">
-									<button class="btn btn-danger btn-cancel px-4" style="min-width: 0" type="button">Cancelar</button>
-									<button class="btn btn-red-transparent btn-login px-4" style="min-width: 0" type="submit">Ingresar <i class="fa fa-play pl-2"></i></button>
+								<div class="frm-buttons row mx-0 justify-content-between">
+									<button class="btn my-1 btn-danger btn-cancel px-4" style="min-width: 0" type="button">Cancelar</button>
+									<button class="btn my-1 btn-red-transparent btn-login px-4" style="min-width: 0" type="submit">Ingresar <i class="fa fa-play pl-2"></i></button>
 								</div>
 							</form>
 						</div>

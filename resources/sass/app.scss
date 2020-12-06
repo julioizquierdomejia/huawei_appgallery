@@ -105,7 +105,8 @@ button {
 	padding: 2px 20px;
     font-size: 20px;
 	&:focus {
-
+		outline: none;
+		border-bottom-color: $red;
 	}
 }
 .f-group-w-icon {
@@ -308,6 +309,17 @@ button {
 			bottom: 0;
 			padding: 20px 35px;
 			z-index: 2;
+		}
+	}
+}
+
+@media (max-width: 1400px) {
+	.cc-huawei {
+		.cc {
+			padding-left: 0 !important;
+			> .row {
+				padding-left: 0 !important;
+			}
 		}
 	}
 }
