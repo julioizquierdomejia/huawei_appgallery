@@ -16,7 +16,7 @@
         </form>
         @endif
       </li>
-      <li class="nav-item">
+      <li class="nav-item d-none d-md-block">
         <a class="nav-link" href="https://consumer.huawei.com/pe/mobileservices/appgallery/">
           <img class="logo-app_gallery" src="{{ asset('img/exploralo-app-gallery.png') }}" width="140"></a>
       </li>

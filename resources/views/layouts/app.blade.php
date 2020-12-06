@@ -30,9 +30,7 @@
       <div class="content pt-4">
         @yield('content')
       </div>
-      <footer class="footer">
-        @include('layouts.footer')
-      </footer>
+      @include('layouts.footer')
     </main>
     <!-- Modal -->
     <div class="modal fade" id="modalSoon" tabindex="-1" role="dialog" aria-labelledby="modalRegisterTitle" aria-hidden="true">

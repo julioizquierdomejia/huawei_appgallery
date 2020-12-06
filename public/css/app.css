@@ -11236,6 +11236,10 @@ button:focus {
     min-width: 1px;
   }
 
+  .page-title .title {
+    font-size: 40px;
+  }
+
   .item-list .item .item-title {
     font-size: 17px;
   }

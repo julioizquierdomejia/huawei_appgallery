@@ -1,10 +1,13 @@
-<footer>
-  <div class="container-fluid redes px-5 py-2">
-  		<ul class="listaRedes list-inline my-3 text-right">
-  			<li class="d-inline-block"><a class="px-2 text-white" href="https://www.facebook.com/HuaweimobilePE/"><i class="fab fa-facebook-square"></i></a></li>
-  			<li class="d-inline-block"><a class="px-2 text-white" href="http://www.twitter.com/HuaweiMobilePe?lang=es"><i class="fab fa-twitter"></i></a></li>
-  			<li class="d-inline-block"><a class="px-2 text-white" href="http://www.youtube.com/user/HuaweiPeru"><i class="fab fa-youtube"></i></a></li>
-  			<li class="d-inline-block"><a class="px-2 text-white" href="http://www.instagram.com/huaweimobilepe/"><i class="fab fa-instagram"></i></a></li>
+<footer class="footer">
+	<div class="container-fluid redes px-md-5 py-2 d-flex align-items-center justify-content-between">
+	  	<a class="d-inline-block d-md-none" href="https://consumer.huawei.com/pe/mobileservices/appgallery/">
+	        <img class="logo-app_gallery" src="{{ asset('img/exploralo-app-gallery.png') }}" width="100">
+	    </a>
+  		<ul class="listaRedes list-inline my-3 text-right small text-right">
+  			<li class="d-inline-block"><a class="px-1 text-white" href="https://www.facebook.com/HuaweimobilePE/"><i class="fab fa-facebook-square"></i></a></li>
+  			<li class="d-inline-block"><a class="px-1 text-white" href="http://www.twitter.com/HuaweiMobilePe?lang=es"><i class="fab fa-twitter"></i></a></li>
+  			<li class="d-inline-block"><a class="px-1 text-white" href="http://www.youtube.com/user/HuaweiPeru"><i class="fab fa-youtube"></i></a></li>
+  			<li class="d-inline-block"><a class="px-1 text-white" href="http://www.instagram.com/huaweimobilepe/"><i class="fab fa-instagram"></i></a></li>
   		</ul>
   	</div>
 </footer>
