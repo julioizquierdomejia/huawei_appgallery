@@ -33,7 +33,7 @@
 			</div>
 			<div class="col-12 col-md-6 form-group">
 				<div class="f-group-w-icon">
-				<input type="text" name="dni" class="form-control bg-transparent pl-0 border-bottom @error('dni') is-invalid @enderror" placeholder="dni" value="{{old('dni')}}">
+				<input type="text" name="dni" class="form-control bg-transparent pl-0 border-bottom @error('dni') is-invalid @enderror" placeholder="DNI" value="{{old('dni')}}">
 				<i class="far fa-id-card icon"></i>
 				</div>
 				@error('dni')
@@ -51,7 +51,7 @@
 			</div>
 			<div class="col-12 col-md-6 form-group frm-code">
 				<div class="f-group-w-icon">
-				<input type="text" name="code" class="form-control bg-transparent pl-0 border-bottom @error('code') is-invalid @enderror" placeholder="codigo">
+				<input type="text" name="code" class="form-control bg-transparent pl-0 border-bottom @error('code') is-invalid @enderror" placeholder="código">
 				<i class="far fa-keyboard icon"></i>
 				<i class="fas fa-question-circle icon" data-toggle="modal" data-target="#modalCodeInfo"></i>
 				</div>
