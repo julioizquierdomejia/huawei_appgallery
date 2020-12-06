@@ -43,7 +43,7 @@
             </button>
           </div>
           <div class="modal-body text-center">
-            <p>Pronto vídeos exclusivos para ti.</p>
+            <p>Disfruta tu masterclass desde este 9 de diciembre a las 6pm. ¡No te la pierdas!</p>
           </div>
           <div class="modal-footer justify-content-center">
             <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
