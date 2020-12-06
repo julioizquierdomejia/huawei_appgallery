@@ -12,7 +12,7 @@
         @if (Auth::user())
         <form id="logout-form" action="{{ route('logout') }}" method="POST">
           @csrf
-          <button class="btn btn-sm text-white" href="/logout" style="font-size: 15px;min-width: 0" type="submit"><span class="d-none d-md-block">Cerrar sesión</span> <i class="fas fa-sign-out-alt"></i></button>
+          <button class="btn btn-sm text-white" href="/logout" style="font-size: 15px;min-width: 0" type="submit"><span class="d-none d-md-inline-block">Cerrar sesión</span> <i class="fas fa-sign-out-alt"></i></button>
         </form>
         @endif
       </li>

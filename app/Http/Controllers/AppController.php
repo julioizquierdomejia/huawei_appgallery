@@ -25,6 +25,11 @@ class AppController extends Controller
         ]);
     }
 
+    public function terms_conditions()
+    {
+        return view('terms-conditions.index');
+    }
+
     /*public function register()
     {
         return view('register');

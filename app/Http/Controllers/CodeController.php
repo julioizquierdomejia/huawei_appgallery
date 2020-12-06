@@ -56,11 +56,13 @@ class CodeController extends Controller
             'dni' => 'required|digits:8',
             'phone' => 'required|min:6',
             'email' => 'required|email|max:255|unique:users',
+            'confirm_terms' => 'required|boolean:in:1',
         );
         $messages = array(
             'required' => 'El :attribute es requerido.',
             'email' => 'El :attribute debe ser una dirección de correo válida.',
-            'email.unique' => 'El email ya fue registrado.'
+            'email.unique' => 'El email ya fue registrado.',
+            'confirm_terms.required' => 'Aceptar términos y condiciones es requerido.',
         );
         $validator = \Validator::make($request->all(), $rules, $messages);
 

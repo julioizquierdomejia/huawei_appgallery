@@ -4,6 +4,7 @@
 	        <img class="logo-app_gallery" src="{{ asset('img/exploralo-app-gallery.png') }}" width="100">
 	    </a>
   		<ul class="listaRedes list-inline my-3 text-right small text-right">
+        <li class="d-inline-block"><a class="text-white" href="/terminos-condiciones">Términos y Condiciones</a></li>
   			<li class="d-inline-block"><a class="px-1 text-white" href="https://www.facebook.com/HuaweimobilePE/"><i class="fab fa-facebook-square"></i></a></li>
   			<li class="d-inline-block"><a class="px-1 text-white" href="http://www.twitter.com/HuaweiMobilePe?lang=es"><i class="fab fa-twitter"></i></a></li>
   			<li class="d-inline-block"><a class="px-1 text-white" href="http://www.youtube.com/user/HuaweiPeru"><i class="fab fa-youtube"></i></a></li>

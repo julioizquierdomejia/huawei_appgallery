@@ -30,4 +30,6 @@ Route::get('/vervideo', [App\Http\Controllers\CodeController::class, 'vervideo']
 Route::get('/ingresar', [App\Http\Controllers\CodeController::class, 'login'])->name('ingresar');
 Route::post('/ingresar', [App\Http\Controllers\CodeController::class, 'login'])->name('ingresar');
 
+Route::get('/terminos-condiciones', [App\Http\Controllers\AppController::class, 'terms_conditions'])->name('terms_conditions');
+
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
