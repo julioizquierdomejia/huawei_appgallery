@@ -78,13 +78,13 @@
 		<div class="col-12 col-md-5 owl-content px-0">
 			<div class="owl-carousel owl-steps pb-5">
 				<div class="item" data-text="Descarga la app de Claro Club desde el AppGallery de HUAWEI">
-					<img class="img-fluid active" src="{{ asset('img/home/d1.png') }}">
+					<img class="img-fluid active" src="{{ asset('img/home/d1.png') }}" alt="Descarga la app de Claro Club desde el AppGallery de HUAWEI">
 				</div>
 				<div class="item" data-text="Copia tu código único para entrar al Masterclass">
-					<img class="img-fluid" src="{{ asset('img/home/d2.png') }}">
+					<img class="img-fluid" src="{{ asset('img/home/d2.png') }}" alt="Copia tu código único para entrar al Masterclass">
 				</div>
 				<div class="item" data-text="¡Y listo! Aprende con nuestros expertos en cocina y fitness.">
-					<img class="img-fluid" src="{{ asset('img/home/d3.png') }}">
+					<img class="img-fluid" src="{{ asset('img/home/d3-n.png') }}" alt="Aprende con nuestros expertos en cocina y fitness">
 				</div>
 			</div>
 		</div>
