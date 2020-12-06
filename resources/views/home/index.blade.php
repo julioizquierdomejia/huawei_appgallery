@@ -29,9 +29,9 @@
 						</div>
 						<div class="f-buttons">
 							<p style="font-size: 16px; opacity: 0.7" class="ml-3">¿Ya tienes una cuenta?</p>
-						<button class="btn btn-red-transparent btn-s-login mb-md-4 my-1" type="button">Ingresa Aquí<i class="fa fa-play pl-2"></i></button>
+						<button class="btn btn-red-transparent btn-s-login my-1 my-md-3" type="button">Ingresa Aquí<i class="fa fa-play pl-2"></i></button>
 						
-						<a href="{{ route('registro') }}" class="btn btn-danger btn-s-register mt-md-2 my-1">Regístrate<i class="fa fa-user pl-2"></i></a>
+						<a href="{{ route('registro') }}" class="btn btn-danger btn-s-register my-1 my-md-3">Regístrate<i class="fa fa-user pl-2"></i></a>
 						<!--button class="btn btn-danger btn-s-register mt-2" type="button" data-toggle="modal" data-target="#modalRegister">Regístrate <i class="fa fa-user pl-2"></i></button-->
 						</div>
 						@endif
