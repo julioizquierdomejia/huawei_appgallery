@@ -1,7 +1,7 @@
 @extends('layouts.app', ['title' => 'Registro'])
 @section('content')
 <div class="cc-huawei pt-5 container">
-	<div class="pt-5 pb-3 mt-5 px-md-5">
+	<div class="pt-md-5 pb-3 mt-md-5 px-md-5">
 		<form class="row px-md-5" action="/register" method="POST" enctype="multipart/form-data">
 			@csrf
 			<div class="col-12 col-md-6 form-group">
@@ -49,11 +49,11 @@
 				<p class="error-message mb-0 text-danger">{{ $message }}</p>
 				@enderror
 			</div>
-			<div class="col-12 col-md-6 form-group">
+			<div class="col-12 col-md-6 form-group frm-code">
 				<div class="f-group-w-icon">
 				<input type="text" name="code" class="form-control bg-transparent pl-0 border-bottom @error('code') is-invalid @enderror" placeholder="codigo">
 				<i class="far fa-keyboard icon"></i>
-				<i class="fas fa-question-circle icon" style="right: -35px;cursor: pointer;" data-toggle="modal" data-target="#modalCodeInfo"></i>
+				<i class="fas fa-question-circle icon" data-toggle="modal" data-target="#modalCodeInfo"></i>
 				</div>
 				@error('code')
 				<p class="error-message mb-0 text-danger">{{ $message }}</p>

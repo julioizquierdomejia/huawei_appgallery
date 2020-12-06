@@ -11168,6 +11168,11 @@ button:focus {
   font-size: 22px;
 }
 
+.frm-code .fa-question-circle {
+  cursor: pointer;
+  right: -35px;
+}
+
 .item-list .item-content {
   overflow: hidden;
 }
@@ -11261,6 +11266,18 @@ button:focus {
 
   .item-list .item .item-text {
     font-size: 15px;
+  }
+
+  .modal-title {
+    font-size: 18px;
+  }
+
+  .frm-code .fa-keyboard {
+    right: 35px;
+  }
+
+  .frm-code .fa-question-circle {
+    right: 10px;
   }
 }
 

@@ -262,6 +262,13 @@ button {
 	}
 }
 
+.frm-code {
+	.fa-question-circle {
+		cursor: pointer;
+		right: -35px;
+	}
+}
+
 .item-list {
 	.item {
 		&-content {
@@ -364,6 +371,19 @@ button {
 			.item-text {
 				font-size: 15px;
 			}
+		}
+	}
+
+	.modal-title {
+		font-size: 18px;
+	}
+
+	.frm-code {
+		.fa-keyboard {
+			right: 35px;
+		}
+		.fa-question-circle {
+			right: 10px;
 		}
 	}
 }
