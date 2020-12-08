@@ -106,23 +106,17 @@ class CodeController extends Controller
 
     public function vervideo(Request $request)
     {
-        //$email = \Cookie::get('email');
-        //$user = User::where('email', '=', $email)->first();
+        return view('videos.list', [
+            //'user' => $cookie_user
+        ]);
+    }
 
-        if(\Auth::user()) {
-            //$get_user = \Cookie::get('user');
-            /*if ($get_user) {
-                $cookie_user = json_decode(\Cookie::get('user'), true);
-            } else {
-                \Cookie::queue('user', json_encode($user), 100);
-                $cookie_user = \Cookie::get('user');
-            }*/
-            return view('opcion', [
-                //'user' => $cookie_user
-            ]);
-        } else {
-            return redirect('/');
-        }
+    public function video(Request $request, $id)
+    {
+        //$video = Video::where('id', $id)->firstOrFail();
+        return view('videos.show', [
+            //'video' => $video
+        ]);
     }
 
     public function login(Request $request)

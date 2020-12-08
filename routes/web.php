@@ -25,7 +25,6 @@ route::resource('codes', App\Http\Controllers\CodeController::class);
 
 Route::get('/register', [App\Http\Controllers\CodeController::class, 'register'])->name('registro');
 Route::post('/register', [App\Http\Controllers\CodeController::class, 'store'])->name('user.store');
-Route::get('/vervideo', [App\Http\Controllers\CodeController::class, 'vervideo'])->name('codes.vervideo');
 
 Route::get('/ingresar', [App\Http\Controllers\CodeController::class, 'login'])->name('ingresar');
 Route::post('/ingresar', [App\Http\Controllers\CodeController::class, 'login'])->name('ingresar');
@@ -33,3 +32,8 @@ Route::post('/ingresar', [App\Http\Controllers\CodeController::class, 'login'])-
 Route::get('/terminos-condiciones', [App\Http\Controllers\AppController::class, 'terms_conditions'])->name('terms_conditions');
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::middleware(['auth:' . config('admin-auth.defaults.guard')])->group(function () {
+	Route::get('/vervideo', [App\Http\Controllers\CodeController::class, 'vervideo'])->name('codes.vervideo');
+	Route::get('/vervideo/{id?}/', [App\Http\Controllers\CodeController::class, 'video'])->name('codes.video');
+});

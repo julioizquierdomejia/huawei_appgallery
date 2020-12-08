@@ -11219,6 +11219,10 @@ button:focus {
   z-index: 2;
 }
 
+.videos-list .item-video {
+  border-radius: 25px 25px 0 0;
+}
+
 @media (max-width: 1400px) {
   .cc-huawei .cc {
     padding-left: 0 !important;

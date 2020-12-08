@@ -11,6 +11,21 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <meta name="keywords" content="Huawei, claro">
+    <meta name="description" content="GANA EXCLUSIVAS Masterclasses con AppGallery y Claro Club" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Huawei | Claro Club" />
+    <meta property="og:description" content="GANA EXCLUSIVAS Masterclasses con AppGallery y Claro Club" />
+    <meta property="og:image" content="{{ asset('img/logo_huawei.png') }}" />
+
+    <meta name="twitter:title" content="Huawei | Claro Club">
+    <meta name="twitter:description" content="GANA EXCLUSIVAS Masterclasses con AppGallery y Claro Club">
+    <meta name="twitter:image" content="{{ asset('img/logo_huawei.png') }}">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@HuaweiMobilePe" />
+    <meta name="twitter:url" content="{{url()->current()}}">
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     {{-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
