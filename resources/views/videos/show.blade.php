@@ -25,11 +25,11 @@
 					<div class="embed-responsive embed-responsive-16by9">
 						@if ($video == 'cocina-peruana')
 						<video controls="" class="embed-responsive-item item-video">
-							<source src="{{ asset('videos/file-5MG.mp4') }}" type="video/mp4">
+							<source src="{{ asset('videos/video.mp4') }}" type="video/mp4">
 						</video>
 						@else
 						<video controls="" class="embed-responsive-item item-video">
-							<source src="{{ asset('videos/file-10MG.mp4') }}" type="video/mp4">
+							<source src="{{ asset('videos/video.mp4') }}" type="video/mp4">
 						</video>
 						@endif
 					</div>
