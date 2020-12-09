@@ -111,11 +111,15 @@ class CodeController extends Controller
         ]);
     }
 
-    public function video(Request $request, $id)
+    public function video(Request $request, $slug)
     {
+        $array = array('cocina-peruana', 'fullbody');
+        if (in_array($slug, $array) == false) {
+            return redirect('/');
+        }
         //$video = Video::where('id', $id)->firstOrFail();
         return view('videos.show', [
-            //'video' => $video
+            'video' => $slug
         ]);
     }
 
