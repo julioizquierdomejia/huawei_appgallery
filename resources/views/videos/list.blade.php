@@ -25,8 +25,8 @@
 							<h4 class="item-title mb-4">
 								<strong>José del Castillo</strong>
 							</h4>
-							{{-- <button class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalSoon">Ver vídeo</button> --}}
-							<a class="btn btn-danger" href="/vervideo/cocina-peruana">Ver vídeo</a>
+							<button class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalSoon">Ver vídeo</button>
+							{{-- <a class="btn btn-danger" href="/vervideo/cocina-peruana">Ver vídeo</a> --}}
 						</div>
 					</div>
 				</div>
@@ -39,7 +39,7 @@
 							<h4 class="item-title mb-4">
 								<strong>Solange Barslund "La Vikinga"</strong>
 							</h4>
-							{{-- <button class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalSoon">Ver vídeo</button> --}}
+							<button class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalSoon">Ver vídeo</button>
 							<a class="btn btn-danger" href="/vervideo/fullbody">Ver vídeo</a>
 						</div>
 					</div>
