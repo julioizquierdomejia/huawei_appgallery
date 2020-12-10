@@ -23,15 +23,13 @@
 			<div class="item h-100">
 				<div class="item-content h-100">
 					<div class="embed-responsive embed-responsive-16by9">
-						@if ($video == 'cocina-peruana')
-						<video controls="" class="embed-responsive-item item-video">
+						<video controls="" class="embed-responsive-item item-video" oncontextmenu="return false;">
+							@if ($video == 'cocina-peruana')
 							<source src="{{ asset('videos/video.mp4') }}" type="video/mp4">
-						</video>
-						@else
-						<video controls="" class="embed-responsive-item item-video">
+							@else
 							<source src="{{ asset('videos/video.mp4') }}" type="video/mp4">
+							@endif
 						</video>
-						@endif
 					</div>
 					<div class="row mt-4">
 						<div class="col-12 col-md-8 item-text">
