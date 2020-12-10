@@ -40,7 +40,7 @@
 								<strong>Solange Barslund "La Vikinga"</strong>
 							</h4>
 							<button class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalSoon">Ver vídeo</button>
-							<a class="btn btn-danger" href="/vervideo/fullbody">Ver vídeo</a>
+							{{-- <a class="btn btn-danger" href="/vervideo/fullbody">Ver vídeo</a> --}}
 						</div>
 					</div>
 				</div>
