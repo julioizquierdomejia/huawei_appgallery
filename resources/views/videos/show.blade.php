@@ -25,7 +25,7 @@
 					<div class="embed-responsive embed-responsive-16by9">
 						<video controls="" class="embed-responsive-item item-video" oncontextmenu="return false;">
 							@if ($video == 'cocina-peruana')
-							<source src="{{ asset('videos/video.mp4') }}" type="video/mp4">
+							<source src="{{ asset('videos/huawei-masterclass-cocina-online-hd.mp4') }}" type="video/mp4">
 							@else
 							<source src="{{ asset('videos/video.mp4') }}" type="video/mp4">
 							@endif
