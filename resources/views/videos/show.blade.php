@@ -63,18 +63,43 @@
   <div class="modal-dialog h-100 m-0" role="document">
     <div class="modal-content bg-dark h-100">
       <div class="modal-header">
-        <h5 class="modal-title" id="modalRegisterTitle">Pronto</h5>
+        <h5 class="modal-title" id="modalRegisterTitle">Ingredientes</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body text-center">
+      <div class="modal-body text-center" style="overflow-y: auto;">
         <div class="receta" style="font-size: 14px;">
-			<h4 class="h6">Ingredientes</h4>
 			<p>Ceviche:</p>
-			<p>200 gr de Pescado Fresco, 1/3 de Cebolla Roja, 01 Camote, 01 Choclo, 01 Kion, Ramas de Culantro, 10 a 12 Limones, 01 Rama de Apio, Hojas de Lechuga Americana, 1/2 Aj&iacute; Limo, Cancha Chulpi, Sal y Pimienta.</p>
+			<ul>
+			<li>200 gr de Pescado Fresco,</li>
+			<li>1/3 de Cebolla Roja,</li>
+			<li>01 Camote,</li>
+			<li>01 Choclo,</li>
+			<li>01 Kion,</li>
+			<li>Ramas de Culantro,</li>
+			<li>10 a 12 Limones,</li>
+			<li>01 Rama de Apio,</li>
+			<li>Hojas de Lechuga Americana,</li>
+			<li>1/2 Aj&iacute; Limo,</li>
+			<li>Cancha Chulpi,</li>
+			<li>Sal y Pimienta.</li>
+			</ul>
 			<p>Lomo Saltado:</p>
-			<p>200 gr de Lomo Fino, &frac12; Cebolla, 01 Tomate, 01 Papa Amarilla, 01 Aj&iacute; Amarillo, Ramas de Culantro, Aceite Vegetal, Vinagre Tinto, Sillao, Or&eacute;gano, 03 Dientes de Ajo, Sal y Pimienta.</p>
+			<ul>
+			<li>200 gr de Lomo Fino,</li>
+			<li>&frac12; Cebolla,</li>
+			<li>01 Tomate,</li>
+			<li>01 Papa Amarilla,</li>
+			<li>01 Aj&iacute; Amarillo,</li>
+			<li>Ramas de Culantro,</li>
+			<li>Aceite Vegetal,</li>
+			<li>Vinagre Tinto,</li>
+			<li>Sillao,</li>
+			<li>Or&eacute;gano,</li>
+			<li>03 Dientes de Ajo,</li>
+			<li>Sal y Pimienta.</li>
+			</ul>
 		</div>
       </div>
       <div class="modal-footer justify-content-center">
