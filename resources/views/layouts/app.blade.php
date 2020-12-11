@@ -36,7 +36,7 @@
     @yield('css')
     <link href="{{ asset('fontawesome-free/css/all.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('owl.carousel/2.3.4/owl.carousel.css') }}" rel="stylesheet" />
-    <link href="{{ asset('css/app.css') }}?v=2" rel="stylesheet" />
+    <link href="{{ asset('css/app.css') }}?v=3" rel="stylesheet" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-184774661-1"></script>
     <script>

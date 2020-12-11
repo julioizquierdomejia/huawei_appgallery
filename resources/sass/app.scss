@@ -59,6 +59,15 @@ h3, h4, h5, h6,
 	img {
 		max-height: 100%;
 	}
+
+	.btn {
+		&.btn-video {
+			font-size: 12px !important;
+		    min-width: auto !important;
+		    padding: 5px 20px !important;
+		    vertical-align: top;
+		}
+	}
 }
 
 button {
