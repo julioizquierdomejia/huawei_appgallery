@@ -34,7 +34,8 @@
 					<div class="row mt-4">
 						<div class="col-12 col-md-8 item-text">
 							@if ($video == 'cocina-peruana')
-							<p>Aprende la mejor técnica para preparar un delicioso <strong>Lomo Saltado</strong> y un increíble ceviche como todo un chef con <strong>José del Castillo</strong>. <button class="btn btn-danger btn-video mt-2 mt-md-2" type="button" data-toggle="modal" data-target="#modalRecipe">Ver receta <i class="fa fa-clipboard-list pl-2"></i></button></p>
+							<p>Aprende la mejor técnica para preparar un delicioso <strong>Lomo Saltado</strong> y un increíble ceviche como todo un chef con <strong>José del Castillo</strong>.</p>
+							<button class="btn btn-danger btn-video mt-2 mt-md-2" type="button" data-toggle="modal" data-target="#modalRecipe">Ver receta <i class="fa fa-clipboard-list pl-2"></i></button>
 							@else
 							<p>Aprende a tener total control de tu cuerpo y disfruta de una clase de entrenamiento Fullbody con <strong>"La Vikinga"</strong>.</p>
 							@endif
@@ -68,7 +69,7 @@
         <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body text-center" style="overflow-y: auto;">
+      <div class="modal-body" style="overflow-y: auto;">
         <div class="receta" style="font-size: 14px;">
 			<p>Ceviche:</p>
 			<ul>
