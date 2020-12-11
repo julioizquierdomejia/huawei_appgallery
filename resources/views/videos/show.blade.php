@@ -27,7 +27,7 @@
 							@if ($video == 'cocina-peruana')
 							<source src="{{ asset('videos/huawei-masterclass-cocina-online-hd.mp4') }}" type="video/mp4">
 							@else
-							<source src="{{ asset('videos/huawei-masterclas-fullbody.mp4') }}" type="video/mp4">
+							<source src="{{ asset('videos/huawei-masterclass-fullbody.mp4') }}" type="video/mp4">
 							@endif
 						</video>
 					</div>
@@ -36,8 +36,7 @@
 							@if ($video == 'cocina-peruana')
 							<p>Aprende la mejor técnica para preparar un delicioso <strong>Lomo Saltado</strong> y un increíble ceviche como todo un chef con <strong>José del Castillo</strong>.</p>
 							@else
-							<p>Aprende la mejor técnica de Entrenamiento Fullbody en casa con
-							<strong>Solange Barslund "La Vikinga"</strong>.</p>
+							<p>Aprende a tener total control de tu cuerpo y disfruta de una clase de entrenamiento Fullbody con <strong>"La Vikinga"</strong>.</p>
 							@endif
 						</div>
 						<div class="col-12 col-md-4 py-2">
