@@ -54,8 +54,8 @@
 						</div>
 					</div>
 					@if ($video == 'cocina-peruana')
-					<div class="receta">
-						<h4>Ingredientes</h4>
+					<div class="receta small">
+						<h4 class="h6">Ingredientes</h4>
 						<p>Ceviche:</p>
 						<p>200 gr de Pescado Fresco, 1/3 de Cebolla Roja, 01 Camote, 01 Choclo, 01 Kion, Ramas de Culantro, 10 a 12 Limones, 01 Rama de Apio, Hojas de Lechuga Americana, 1/2 Aj&iacute; Limo, Cancha Chulpi, Sal y Pimienta.</p>
 						<p>Lomo Saltado:</p>
