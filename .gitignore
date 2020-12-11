@@ -22,5 +22,6 @@ public/fonts/vendor/*
 public/media
 public/images/vendor/*
 public/uploads
+public/videos/*
 storage/uploads
 public/cms/uploads
