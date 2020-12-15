@@ -36,8 +36,7 @@
     @yield('css')
     <link href="{{ asset('fontawesome-free/css/all.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('owl.carousel/2.3.4/owl.carousel.css') }}" rel="stylesheet" />
-    <link href="{{ asset('css/app.css') }}?v=2" rel="stylesheet" />
-
+    <link href="{{ asset('css/app.css') }}?v=3" rel="stylesheet" />
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

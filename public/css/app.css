@@ -10958,6 +10958,13 @@ h2,
   max-height: 100%;
 }
 
+.cc-huawei .btn.btn-video {
+  font-size: 12px !important;
+  min-width: auto !important;
+  padding: 5px 20px !important;
+  vertical-align: top;
+}
+
 button:focus {
   box-shadow: none;
   outline: none;
