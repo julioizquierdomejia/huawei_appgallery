@@ -1,4 +1,9 @@
 @extends('layouts.app', ['title' => 'Términos y Condiciones'])
+@section('header_script')
+<script>
+	ga('send', 'event','HUAWEI_CLAROCLUB','Inicio','Terminos_Condiciones');
+</script>
+@endsection
 @section('content')
 <div class="cc-huawei pt-5 container">
 	<div class="pt-5">
