@@ -26,7 +26,7 @@
 								<strong>José del Castillo</strong>
 							</h4>
 							{{-- <button class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalSoon">Ver vídeo</button> --}}
-							<a class="btn btn-danger" href="/vervideo/cocina-peruana">Ver vídeo</a>
+							<a class="btn btn-danger" href="/vervideo/cocina-peruana" onclick="ga('send', 'event','HUAWEI_CLAROCLUB','Perfil','VerVideo_Gastro');">Ver vídeo</a>
 						</div>
 					</div>
 				</div>
@@ -40,7 +40,7 @@
 								<strong>Solange Barslund "La Vikinga"</strong>
 							</h4>
 							{{-- <button class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalSoon">Ver vídeo</button> --}}
-							<a class="btn btn-danger" href="/vervideo/fullbody">Ver vídeo</a>
+							<a class="btn btn-danger" href="/vervideo/fullbody" onclick="ga('send', 'event','HUAWEI_CLAROCLUB','Perfil','VerVideo_Gym');">Ver vídeo</a>
 						</div>
 					</div>
 				</div>

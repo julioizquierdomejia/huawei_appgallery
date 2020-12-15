@@ -1,4 +1,9 @@
 @extends('layouts.app', ['title' => 'Registro'])
+@section('header_script')
+<script>
+    ga('send', 'event','HUAWEI_CLAROCLUB','Inicio','Registrate');
+</script>
+@endsection
 @section('content')
 <div class="cc-huawei pt-5 container">
 	<div class="pt-md-5 pb-3 mt-md-5 px-md-5">
@@ -53,7 +58,7 @@
 				<div class="f-group-w-icon">
 				<input type="text" name="code" class="form-control bg-transparent pl-0 border-bottom @error('code') is-invalid @enderror" placeholder="código">
 				<i class="far fa-keyboard icon"></i>
-				<i class="fas fa-question-circle icon" data-toggle="modal" data-target="#modalCodeInfo"></i>
+				<i class="fas fa-question-circle icon" data-toggle="modal" data-target="#modalCodeInfo" onclick="ga('send', 'event','HUAWEI_CLAROCLUB','Registro','Que_es_esto');"></i>
 				</div>
 				@error('code')
 				<p class="error-message mb-0 text-danger">{{ $message }}</p>
@@ -71,7 +76,7 @@
 				@enderror
 			</div>
 			<div class="col-12 text-center">
-				<button class="btn btn-red-transparent btn-login px-4" type="submit">Ingresar <i class="fa fa-play pl-2"></i></button>
+				<button class="btn btn-red-transparent btn-login px-4" type="submit" onclick="ga('send', 'event','HUAWEI_CLAROCLUB','Registro','Continuar');">Ingresar <i class="fa fa-play pl-2"></i></button>
 			</div>
 		</form>
 		
