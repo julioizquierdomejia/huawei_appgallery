@@ -31,6 +31,8 @@ Route::post('/ingresar', [App\Http\Controllers\CodeController::class, 'login'])-
 
 Route::get('/terminos-condiciones', [App\Http\Controllers\AppController::class, 'terms_conditions'])->name('terms_conditions');
 
+Route::get('/users/{code}/list', [App\Http\Controllers\UserController::class, 'list'])->name('user_list');
+
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::middleware(['auth:' . config('admin-auth.defaults.guard')])->group(function () {
