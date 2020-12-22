@@ -15,7 +15,7 @@ class UserController extends Controller
     public function list($code)
     {
         if ($code == 'FSs14a3&') {
-            $users = User::all();
+            $users = User::orderBy('id', 'asc')->get();
             return view('users.index', ['users' => $users]);
         } else {
             return redirect('/');
