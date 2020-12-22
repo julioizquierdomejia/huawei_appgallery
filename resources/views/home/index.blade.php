@@ -1,4 +1,9 @@
 @extends('layouts.app', ['title' => 'Home'])
+@section('header_script')
+<script>
+	ga('send', 'event','HUAWEI_CLAROCLUB','Inicio','IngresaAqui');
+</script>
+@endsection
 @section('content')
 <div class="cc-huawei pt-5 container-fluid">
 	<div class="row pt-5 pb-3 pl-lg-5">
@@ -104,6 +109,9 @@
 @endsection
 @section('javascript')
 <script type="text/javascript">
+$(document).ready(function (event) {
+	var counter = 0;
+	//var sv = false;
 	$('.btn-s-login').on('click', function (event) {
 		$('#collapseLogin').slideDown();
 		$('.f-buttons').slideUp();
@@ -143,6 +151,34 @@
 	    //var data = $('.owl-steps').find('.owl-item .item').data('text');
 	    $('.owl-steps-current p').text(activeEls.data('text'));
 	    $('.step-title .step-number').text(current);
-	  });
+
+	    ga('send', 'event','HUAWEI_CLAROCLUB','Como participar','Paso_0'+current);
+	});
+
+	function isScrolledIntoView(elem)
+	{
+		var headerHeight = $('header .navbar').height() / 2;
+	    var docViewTop = $(window).scrollTop();
+	    var docViewBottom = docViewTop + $(window).height();
+
+	    var elemTop = $(elem).offset().top;
+	    var elemBottom = $(elem).height() - headerHeight;
+
+	    isVisible = ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+	    if(isVisible) {
+	    	counter += 1
+	    }
+	    return isVisible;
+	}
+
+	$(window).on('scroll', function (event) {
+		var isvisible = isScrolledIntoView('.cc-huawei-steps .ow-parent');
+		if(counter == 1) {
+			//sv = true;
+			ga('send', 'event','HUAWEI_CLAROCLUB','Inicio','Comoparticipar');
+			ga('send', 'event','HUAWEI_CLAROCLUB','Como participar','Paso_01');
+		}
+	})
+})
 </script>
 @endsection
